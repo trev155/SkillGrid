@@ -1,17 +1,71 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function App() {
+  return (
+    <div className="App">
+      <SkillGrid/>
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+class SkillGrid extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      gridData: []
+    };
+  }
+
+  getData() {
+    axios.get("data.json").then(result => {
+      this.setState({"gridData": result.data});
+    });
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+
+  render() {
+    const gridData = this.state.gridData.map(node => {
+      return (
+        <Node key={node.position} node={node}/>
+      );
+    });
+
+    return (
+      <React.Fragment>
+        {gridData}
+      </React.Fragment>
+    );
+  }
+}
+
+class Node extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activated: false
+    };
+    this.activateAction = this.activateAction.bind(this);
+  }
+
+  activateAction(action) {
+    this.setState({
+      activated: !this.state.activated
+    });
+  }
+
+  render() {
+    var node = this.props.node;
+    return (
+      <div>
+        <button onClick={this.activateAction}>{this.state.activated ? "ON" : "OFF"} - {node.title}</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<App/>, document.getElementById("root"));
