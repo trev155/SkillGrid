@@ -1,0 +1,50 @@
+body {
+	background-color: rgba(11, 25, 30, 0.5);
+}
+
+.skillGrid {
+	background-color: rgba(110, 252, 130, 0.5);
+
+	/* non selectable text */
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Library classes */
+/*
+svg g fill -> background colour of hexagon
+svg g polygon stroke -> outline of hexagon
+svg g text -> text inside of hexagon
+*/
+.grid {
+	background-color: rgba(110, 25, 30, 0.5);	
+}
+
+svg g {
+  fill: rgb(10, 60, 200);
+  fill-opacity: 0.6;
+}
+svg g:hover {
+  fill-opacity: 1;
+}
+svg g:hover text {
+  
+}
+
+svg g polygon {
+  stroke: rgb(150, 222, 122);
+  stroke-width: 0.3;
+  transition: fill-opacity .5s;
+}
+svg g text {
+  font-size: 0.18em;
+  fill: white;
+  fill-opacity: 0.7;
+  transition: fill-opacity .5s;
+}
+
