@@ -118,6 +118,7 @@ class Hexagon extends Component {
         onDragEnd={e => this.onDragEnd(e)}
         onDragOver={e => this.onDragOver(e)}
         onDrop={e => this.onDrop(e)}
+        data-tip data-for='skillTooltip'
       >
         <g className="hexagon">
           <polygon points={points} fill={fillId} style={cellStyle} />
