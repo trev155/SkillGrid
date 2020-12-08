@@ -8,9 +8,6 @@ function App() {
   return (
     <div className="App">
       <SkillGrid/>
-
-      
-
     </div>
   );
 }
@@ -19,8 +16,16 @@ class SkillGrid extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      gridData: []
+      gridData: [],
+      hoverData: ""
     };
+    this.setHoverData = this.setHoverData.bind(this);
+  }
+
+  setHoverData(data) {
+    this.setState({
+      "hoverData": data
+    });
   }
 
   getData() {
@@ -37,7 +42,7 @@ class SkillGrid extends React.Component {
     const gridData = this.state.gridData.map(node => {
       const key = node.positionQ + "/" + node.positionR
       return (
-        <Node key={key} node={node}/>
+        <Node key={key} node={node} setHoverData={this.setHoverData}/>
       );
     });
 
@@ -48,9 +53,11 @@ class SkillGrid extends React.Component {
             {gridData}
           </Layout>
         </HexGrid>
-        <ReactTooltip id='svgTooltip2'>
-          123  
-        </ReactTooltip>
+
+        <svg data-tip="test" data-for='dummyTooltip'/>
+        <ReactTooltip id='dummyTooltip'/>
+
+        <ReactTooltip id='skillTooltip'>{this.state.hoverData}</ReactTooltip>
       </div>
     );
   }
@@ -61,9 +68,11 @@ class Node extends React.Component {
     super(props);
     this.state = {
       activated: false,
-      hovering: false
+      hovering: false,
+
     };
     this.activateAction = this.activateAction.bind(this);
+    this.hoverToggle = this.hoverToggle.bind(this);
   }
 
   activateAction(action) {
@@ -72,15 +81,32 @@ class Node extends React.Component {
     });
   }
 
+  hoverToggle(action) {
+    this.setState({
+      hovering: !this.state.hovering
+    });
+  }
+
+  componentDidUpdate() {
+    ReactTooltip.rebuild()
+  }
+
   render() {
     const node = this.props.node;
-    const tooltipId = node.positionQ + "." + node.positionR;
+
+    const hoverDescription = node.description.length > 0 ? <li>{node.description}</li> : '';
+    const hoverData = <ul><li>{node.displayTextFull}</li><li>Energy: {node.energy}</li>{hoverDescription}</ul>;
+
+    const updateHoverData = this.props.setHoverData;
 
     return (
       <Hexagon 
         className={this.state.activated ? "activated" : ""}
         onClick={this.activateAction}
-        data-tip='true' data-for='svgTooltip2'
+        onMouseEnter={function() {
+          updateHoverData(hoverData);
+        }}
+        onMouseLeave={this.hoverToggle}
         q={parseInt(node.positionQ)} r={parseInt(node.positionR)} s={0}>
         <Text>{node.displayTextShort}</Text>
       </Hexagon>

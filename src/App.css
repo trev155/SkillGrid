@@ -16,6 +16,11 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
 /* Library classes */
 /*
@@ -32,7 +37,7 @@ svg g:hover {
   	fill-opacity: 1;
 }
 svg g:hover text {
-  
+  	
 }
 
 svg g.activated .hexagon {
