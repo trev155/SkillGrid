@@ -67,7 +67,7 @@
         "moveLevel": "1",
         "displayTextShort": "Solar Shield",
         "displayTextFull": "Solar Shield",
-        "description": "This Pok\u00e9mon is not affected by status conditions when the weather is sunny.",
+        "description": "This Pok\u00c3\u00a9mon is not affected by status conditions when the weather is sunny.",
         "positionQ": "-2",
         "positionR": "0"
     },
@@ -238,7 +238,7 @@
         "moveLevel": "2",
         "displayTextShort": "Healing Sun 1",
         "displayTextFull": "Healing Sun 1",
-        "description": "Restores the Pok\u00e9mon's HP whenever it takes an action while the weather is sunny.",
+        "description": "Restores the Pok\u00c3\u00a9mon's HP whenever it takes an action while the weather is sunny.",
         "positionQ": "-3",
         "positionR": "0"
     },
@@ -373,7 +373,7 @@
         "moveLevel": "3",
         "displayTextShort": "L.S. MS 2",
         "displayTextFull": "Leaf Storm Mind Swell 2",
-        "description": "Has a moderate chance of raising the user's Sp. Atk when the user's Pok\u00e9mon uses a move.",
+        "description": "Has a moderate chance of raising the user's Sp. Atk when the user's Pok\u00c3\u00a9mon uses a move.",
         "positionQ": "1",
         "positionR": "-5"
     },
@@ -391,7 +391,7 @@
         "moveLevel": "3",
         "displayTextShort": "Amped Up 1",
         "displayTextFull": "Amped Up 1",
-        "description": "Raises the Pok\u00e9mon's Speed when it lands a critical hit.",
+        "description": "Raises the Pok\u00c3\u00a9mon's Speed when it lands a critical hit.",
         "positionQ": "-2",
         "positionR": "6"
     },
@@ -417,10 +417,13 @@
         "energy": "10",
         "moveLevel": "3",
         "displayTextShort": "Brainy Rush 6",
-        "displayTextFull": "Radically raises the user's Sp. Atk after using a sync move.",
-        "description": "",
-        "positionQ": "2",
-        "positionR": "2"
+        "displayTextFull": "Brainy Rush 6",
+        "description": "Radically raises the user's Sp. Atk after using a sync move.",
+        "positionQ": "",
+        "positionR": "2",
+        "null": [
+            "2"
+        ]
     },
     {
         "energy": "5",

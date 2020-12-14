@@ -1,0 +1,434 @@
+[
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Spd +5",
+        "displayTextFull": "Speed +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "HP +10",
+        "displayTextFull": "HP +10",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Atk +5",
+        "displayTextFull": "Sp. Atk +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "0"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Defense +5",
+        "displayTextFull": "Defense +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Atk +5",
+        "displayTextFull": "Sp. Atk +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +5",
+        "displayTextFull": "Sp. Def +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "0"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Blizzard +5",
+        "displayTextFull": "Blizzard: Power +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "-2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Speed +10",
+        "displayTextFull": "Speed +10",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-2"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Blizzard +5",
+        "displayTextFull": "Blizzard: Power +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-3"
+    },
+    {
+        "energy": "6",
+        "moveLevel": "1",
+        "displayTextShort": "Swift MGR 3",
+        "displayTextFull": "Swift Move Gauge Refresh 3",
+        "description": "Has a moderately good chance of increasing the user's move gauge by one when a move is successful.",
+        "positionQ": "1",
+        "positionR": "-3"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Swift +5",
+        "displayTextFull": "Swift: Power +5",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "-3"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "HP +20",
+        "displayTextFull": "HP +20",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "-2"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Sync +25",
+        "displayTextFull": "Pok\u00c3\u00a9mon Profressor Psychic: Power +25",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "-3"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Swift +5",
+        "displayTextFull": "Swift: Power +5",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "-2"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Fire Blast +5",
+        "displayTextFull": "Fire Blast: Power +5",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "-1"
+    },
+    {
+        "energy": "4",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Atk +10",
+        "displayTextFull": "Sp. Atk +10",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "0"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Fire Blast +5",
+        "displayTextFull": "Fire Blast: Power +5",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "0"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Fire Blast +5",
+        "displayTextFull": "Fire Blast: Power +5",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "1"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Psychic +5",
+        "displayTextFull": "Psychic: Power +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Atk +5",
+        "displayTextFull": "Sp. Atk +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "2"
+    },
+    {
+        "energy": "4",
+        "moveLevel": "1",
+        "displayTextShort": "Psychic +5",
+        "displayTextFull": "Psychic: Power +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "3"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Psychic +5",
+        "displayTextFull": "Psychic: Power +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "3"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +10",
+        "displayTextFull": "Sp. Def +10",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "3"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "HP +20",
+        "displayTextFull": "HP +20",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "2"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Sync +25",
+        "displayTextFull": "Pok\u00c3\u00a9mon Profressor Psychic: Power +25",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "3"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Defense +10",
+        "displayTextFull": "Defense +10",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "2"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Thunder +5",
+        "displayTextFull": "Thunder: Power +5",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "1"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Speed +10",
+        "displayTextFull": "Speed +10",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "0"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Thunder +5",
+        "displayTextFull": "Thunder: Power +5",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "0"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "1",
+        "displayTextShort": "Thunder +5",
+        "displayTextFull": "Thunder: Power +5",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "-1"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "X Speed MPR 3",
+        "displayTextFull": "X Speed MP Refresh 3",
+        "description": "Has a moderately good chance of restoring one MP of the move used if the move is successful.",
+        "positionQ": "-1",
+        "positionR": "-3"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "Blizzard Acc. +20",
+        "displayTextFull": "Blizzard: Accuracy +20",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-4"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "2",
+        "displayTextShort": "Blizzard +5",
+        "displayTextFull": "Blizzard: Power +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-4"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "Weather Surge 3",
+        "displayTextFull": "Weather Surge 3",
+        "description": "Powers up moves when weather conditions are in effect.",
+        "positionQ": "4",
+        "positionR": "-1"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "2",
+        "displayTextShort": "Fire Blast Acc. +10",
+        "displayTextFull": "Fire Blast: Accuracy +10",
+        "description": "",
+        "positionQ": "4",
+        "positionR": "0"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "Dirty Fighting 3",
+        "displayTextFull": "Dirty Fighting 3",
+        "description": "Powers up moves when the move's target or targets are affected by a status condition.",
+        "positionQ": "3",
+        "positionR": "1"
+    },
+    {
+        "energy": "4",
+        "moveLevel": "2",
+        "displayTextShort": "Natural Remedy",
+        "displayTextFull": "Natural Remedy",
+        "description": "Once per battle, removes all status conditions from the user when the user is inflicted by any status condition.",
+        "positionQ": "-3",
+        "positionR": "4"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "A.W.O.D. MPR 3",
+        "displayTextFull": "A World of Dreams! MP Refresh 3",
+        "description": "Has a moderately good chance of restoring one MP of the move if the move used is successful.",
+        "positionQ": "-4",
+        "positionR": "4"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "First Aid 4",
+        "displayTextFull": "First Aid 4",
+        "description": "Restores a bit of the Pok\u00c3\u00a9mon's HP once during battle when the Pok\u00c3\u00a9mon is in a pinch.",
+        "positionQ": "-4",
+        "positionR": "3"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "Inertia",
+        "displayTextFull": "Inertia",
+        "description": "The higher the user's Speed, the more it powers up sync moves.",
+        "positionQ": "3",
+        "positionR": "-4"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "3",
+        "displayTextShort": "Swift +5",
+        "displayTextFull": "Swift: Power +5",
+        "description": "",
+        "positionQ": "4",
+        "positionR": "-4"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "Blind Spot",
+        "displayTextFull": "Blind Spot",
+        "description": "The more the user's evasiveness has been raised, the more it powers up sync moves.",
+        "positionQ": "4",
+        "positionR": "-3"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Agile Entry 2",
+        "displayTextFull": "Agile Entry 2",
+        "description": "Sharply raises the user's evasiveness when the Pok\u00c3\u00a9mon enters a battle.",
+        "positionQ": "1",
+        "positionR": "3"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "3",
+        "displayTextShort": "Psychic +5",
+        "displayTextFull": "Psychic: Power +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "4"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Shifty Striker 2",
+        "displayTextFull": "Shifty Striker 2",
+        "description": "Occasionally raises the user's evasiveness when the user's Pok\u00c3\u00a9mon uses a move.",
+        "positionQ": "-1",
+        "positionR": "4"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "H.E. 1",
+        "displayTextFull": "Hostile Environment 1",
+        "description": "Raises the chance of inflicting status conditions with the additional effects of moves.",
+        "positionQ": "-4",
+        "positionR": "1"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "3",
+        "displayTextShort": "Thunder Acc. +20",
+        "displayTextFull": "Thunder: Accuracy +20",
+        "description": "",
+        "positionQ": "-4",
+        "positionR": "0"
+    },
+    {
+        "energy": "6",
+        "moveLevel": "3",
+        "displayTextShort": "Special Reserves 2",
+        "displayTextFull": "Special Reserves 2",
+        "description": "Once per battle, sharply raises the user's Sp. Atk when in a pinch.",
+        "positionQ": "-3",
+        "positionR": "-1"
+    }
+]

@@ -1,0 +1,5 @@
+filename,displayname
+sceptile,Sceptile
+musharna,Musharna
+steelix,Steelix
+mew,Mew

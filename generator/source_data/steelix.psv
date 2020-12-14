@@ -1,0 +1,49 @@
+energy|moveLevel|displayTextShort|displayTextFull|description|positionQ|positionR
+0|1|Spd +5|Speed +5||0|-1
+0|1|HP +10|HP +10||1|-1
+0|1|Attack +5|Attack +5||1|0
+0|1|Defense +5|Defense +5||0|1
+0|1|Attack +5|Attack +5||-1|1
+0|1|Sp. Def +5|Sp. Def +5||-1|0
+5|1|Iron Tail Acc +10|Iron Tail: Accuracy +10||-2|0
+2|1|Iron Tail +3|Iron Tail: Power +3||-3|0
+6|1|Iron Tail MGR3|Iron Tail Move Gauge Refresh 3|Has a moderately good chance of charging the user's move gauge by one when a move is successful.|-2|-1
+2|1|Iron Tail +3|Iron Tail: Power +3||-1|-1
+2|1|Attack +5|Attack +5||-2|2
+2|1|Attack +5|Attack +5||-3|3
+8|1|Tough Cookie|Tough Cookie|The more the user's Defense has been rasied, the more it powers up moves.|-2|3
+2|1|Attack +5|Attack +5||-1|2
+2|1|Defense +5|Defense +5||1|-2
+2|1|Defense +5|Defense +5||1|-3
+2|1|Sp. Def +5|Sp. Def +5||2|-3
+7|1|X Def. All MPR3|X Defense All MP Refresh 3|Has a moderately good chance of restoring one MP of the move used if the move is successful.|2|-4
+2|1|Sp. Def +5|Sp. Def +5||3|-4
+5|1|Sp. Def +10|Sp. Def +10||3|-5
+2|1|Attack +5|Attack +5||1|1
+2|1|Gyro Ball +4|Gyro Ball: Power +4||2|1
+2|1|Gyro Ball +4|Gyro Ball: Power +4||1|2
+6|1|Gyro Ball MGR4|Gyro Ball Move Gauge Refresh 4|Has a good chance of charging the user's move gauge by one when a move is successful.|2|2
+2|1|Gyro Ball +4|Gyro Ball: Power +4||3|1
+2|1|Gyro Ball +4|Gyro Ball: Power +4||3|2
+2|2|Iron Tail +3|Iron Tail: Power +3||-3|-1
+5|2|Iron Tail Acc +10|Iron Tail: Accuracy +10||-2|-2
+2|2|Iron Tail +3|Iron Tail: Power +3||-1|-2
+4|2|Defense +5|Defense +5||1|-4
+8|2|Tough Cookie|Tough Cookie|The more the user's Defense has been raised, the more it powers up moves.|2|-5
+3|2|Sand Shelter|Sand Shelter|Protects the Pokémon from damage from a sandstorm.|3|-6
+7|2|Clang! MPR3|Clang! MP Refresh 3|Has a moderately good chance of restoring one MP of the move used if the move is successful.|-3|4
+8|2|Attack +20|Attack +20||-2|4
+4|2|HP +20|HP +20||-1|3
+2|2|Gyro Ball +4|Gyro Ball: Power +4||1|3
+8|2|Clang! Lockstep 9|Clang! Lockstep 9|Charges the move gauges of all allied sync pairs by one when a move is successful.|2|3
+10|2|Unyielding 2|Unyielding 2|When the user has endured the most recent hit and has 1 HP remaining, has moderate chance of allowing the user to endure an additional hit.|3|3
+8|3|Iron Tail OaR 1|Iron Tail: On a Roll 1|Raises the chance of lowering stat values with the additional effects of moves.|-3|-2
+10|3|HP +50|HP +50||-1|-3
+5|3|Sync +25|Steel-Clad Iron Tail: Power +25||0|-3
+8|3|Clang! BB 1|Clang! Beserk Bunch 1|Raises the Attack of all allied sync pairs when a move is successful.|1|-5
+10|3|Soothing Sand 1|Soothing Sand 1|Restores the Pokémon's HP whenever it takes an action during a sandstorm.|2|-6
+10|3|Recuperation 2|Recuperation 2|Restores the user's HP after using a sync move.|-3|5
+10|3|Impatient 1|Impatient 1|Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attck move.|-1|4
+5|3|Sync +25|Steel-Clad Iron Tail: Power +25||0|3
+10|3|Gyro Ball SS9|Gyro Ball Surging Sand 9|Powers up moves in a sandstorm.|1|4
+8|3|Rejuvenate 6|Rejuvenate 6|Charges the user's move gauge by six after using a sync move.|2|4

@@ -1,0 +1,49 @@
+energy|moveLevel|displayTextShort|displayTextFull|description|positionQ|positionR
+0|1|Spd +5|Speed +5||0|-1
+0|1|HP +10|HP +10||1|-1
+0|1|Sp. Atk +5|Sp. Atk +5||1|0
+0|1|Defense +5|Defense +5||0|1
+0|1|Sp. Atk +5|Sp. Atk +5||-1|1
+0|1|Sp. Def +5|Sp. Def +5||-1|0
+3|1|Blizzard +5|Blizzard: Power +5||-1|-2
+2|1|Speed +10|Speed +10||0|-2
+3|1|Blizzard +5|Blizzard: Power +5||0|-3
+6|1|Swift MGR 3|Swift Move Gauge Refresh 3|Has a moderately good chance of increasing the user's move gauge by one when a move is successful.|1|-3
+2|1|Swift +5|Swift: Power +5||2|-3
+3|1|HP +20|HP +20||2|-2
+5|1|Sync +25|Pokémon Profressor Psychic: Power +25||3|-3
+2|1|Swift +5|Swift: Power +5||3|-2
+3|1|Fire Blast +5|Fire Blast: Power +5||3|-1
+4|1|Sp. Atk +10|Sp. Atk +10||2|0
+3|1|Fire Blast +5|Fire Blast: Power +5||3|0
+3|1|Fire Blast +5|Fire Blast: Power +5||2|1
+5|1|Psychic +5|Psychic: Power +5||1|2
+2|1|Sp. Atk +5|Sp. Atk +5||0|2
+4|1|Psychic +5|Psychic: Power +5||0|3
+5|1|Psychic +5|Psychic: Power +5||-1|3
+5|1|Sp. Def +10|Sp. Def +10||-2|3
+3|1|HP +20|HP +20||-2|2
+5|1|Sync +25|Pokémon Profressor Psychic: Power +25||-3|3
+5|1|Defense +10|Defense +10||-3|2
+3|1|Thunder +5|Thunder: Power +5||-3|1
+3|1|Speed +10|Speed +10||-2|0
+3|1|Thunder +5|Thunder: Power +5||-3|0
+3|1|Thunder +5|Thunder: Power +5||-2|-1
+7|2|X Speed MPR 3|X Speed MP Refresh 3|Has a moderately good chance of restoring one MP of the move used if the move is successful.|-1|-3
+7|2|Blizzard Acc. +20|Blizzard: Accuracy +20||0|-4
+3|2|Blizzard +5|Blizzard: Power +5||1|-4
+7|2|Weather Surge 3|Weather Surge 3|Powers up moves when weather conditions are in effect.|4|-1
+5|2|Fire Blast Acc. +10|Fire Blast: Accuracy +10||4|0
+7|2|Dirty Fighting 3|Dirty Fighting 3|Powers up moves when the move's target or targets are affected by a status condition.|3|1
+4|2|Natural Remedy|Natural Remedy|Once per battle, removes all status conditions from the user when the user is inflicted by any status condition.|-3|4
+7|2|A.W.O.D. MPR 3|A World of Dreams! MP Refresh 3|Has a moderately good chance of restoring one MP of the move if the move used is successful.|-4|4
+7|2|First Aid 4|First Aid 4|Restores a bit of the Pokémon's HP once during battle when the Pokémon is in a pinch.|-4|3
+8|3|Inertia|Inertia|The higher the user's Speed, the more it powers up sync moves.|3|-4
+2|3|Swift +5|Swift: Power +5||4|-4
+8|3|Blind Spot|Blind Spot|The more the user's evasiveness has been raised, the more it powers up sync moves.|4|-3
+10|3|Agile Entry 2|Agile Entry 2|Sharply raises the user's evasiveness when the Pokémon enters a battle.|1|3
+5|3|Psychic +5|Psychic: Power +5||0|4
+10|3|Shifty Striker 2|Shifty Striker 2|Occasionally raises the user's evasiveness when the user's Pokémon uses a move.|-1|4
+8|3|H.E. 1|Hostile Environment 1|Raises the chance of inflicting status conditions with the additional effects of moves.|-4|1
+7|3|Thunder Acc. +20|Thunder: Accuracy +20||-4|0
+6|3|Special Reserves 2|Special Reserves 2|Once per battle, sharply raises the user's Sp. Atk when in a pinch.|-3|-1

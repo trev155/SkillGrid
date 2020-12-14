@@ -1,0 +1,434 @@
+[
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Spd +5",
+        "displayTextFull": "Speed +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "HP +10",
+        "displayTextFull": "HP +10",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "0"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Defense +5",
+        "displayTextFull": "Defense +5",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "1"
+    },
+    {
+        "energy": "0",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +5",
+        "displayTextFull": "Sp. Def +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "0"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Iron Tail Acc +10",
+        "displayTextFull": "Iron Tail: Accuracy +10",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "0"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Iron Tail +3",
+        "displayTextFull": "Iron Tail: Power +3",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "0"
+    },
+    {
+        "energy": "6",
+        "moveLevel": "1",
+        "displayTextShort": "Iron Tail MGR3",
+        "displayTextFull": "Iron Tail Move Gauge Refresh 3",
+        "description": "Has a moderately good chance of charging the user's move gauge by one when a move is successful.",
+        "positionQ": "-2",
+        "positionR": "-1"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Iron Tail +3",
+        "displayTextFull": "Iron Tail: Power +3",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "-1"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "3"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "1",
+        "displayTextShort": "Tough Cookie",
+        "displayTextFull": "Tough Cookie",
+        "description": "The more the user's Defense has been rasied, the more it powers up moves.",
+        "positionQ": "-2",
+        "positionR": "3"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Defense +5",
+        "displayTextFull": "Defense +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Defense +5",
+        "displayTextFull": "Defense +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-3"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +5",
+        "displayTextFull": "Sp. Def +5",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "-3"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "1",
+        "displayTextShort": "X Def. All MPR3",
+        "displayTextFull": "X Defense All MP Refresh 3",
+        "description": "Has a moderately good chance of restoring one MP of the move used if the move is successful.",
+        "positionQ": "2",
+        "positionR": "-4"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +5",
+        "displayTextFull": "Sp. Def +5",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "-4"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "1",
+        "displayTextShort": "Sp. Def +10",
+        "displayTextFull": "Sp. Def +10",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "-5"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Attack +5",
+        "displayTextFull": "Attack +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "1"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Gyro Ball +4",
+        "displayTextFull": "Gyro Ball: Power +4",
+        "description": "",
+        "positionQ": "2",
+        "positionR": "1"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Gyro Ball +4",
+        "displayTextFull": "Gyro Ball: Power +4",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "2"
+    },
+    {
+        "energy": "6",
+        "moveLevel": "1",
+        "displayTextShort": "Gyro Ball MGR4",
+        "displayTextFull": "Gyro Ball Move Gauge Refresh 4",
+        "description": "Has a good chance of charging the user's move gauge by one when a move is successful.",
+        "positionQ": "2",
+        "positionR": "2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Gyro Ball +4",
+        "displayTextFull": "Gyro Ball: Power +4",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "1"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "1",
+        "displayTextShort": "Gyro Ball +4",
+        "displayTextFull": "Gyro Ball: Power +4",
+        "description": "",
+        "positionQ": "3",
+        "positionR": "2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "2",
+        "displayTextShort": "Iron Tail +3",
+        "displayTextFull": "Iron Tail: Power +3",
+        "description": "",
+        "positionQ": "-3",
+        "positionR": "-1"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "2",
+        "displayTextShort": "Iron Tail Acc +10",
+        "displayTextFull": "Iron Tail: Accuracy +10",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "-2"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "2",
+        "displayTextShort": "Iron Tail +3",
+        "displayTextFull": "Iron Tail: Power +3",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "-2"
+    },
+    {
+        "energy": "4",
+        "moveLevel": "2",
+        "displayTextShort": "Defense +5",
+        "displayTextFull": "Defense +5",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "-4"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "2",
+        "displayTextShort": "Tough Cookie",
+        "displayTextFull": "Tough Cookie",
+        "description": "The more the user's Defense has been raised, the more it powers up moves.",
+        "positionQ": "2",
+        "positionR": "-5"
+    },
+    {
+        "energy": "3",
+        "moveLevel": "2",
+        "displayTextShort": "Sand Shelter",
+        "displayTextFull": "Sand Shelter",
+        "description": "Protects the Pok\u00c3\u00a9mon from damage from a sandstorm.",
+        "positionQ": "3",
+        "positionR": "-6"
+    },
+    {
+        "energy": "7",
+        "moveLevel": "2",
+        "displayTextShort": "Clang! MPR3",
+        "displayTextFull": "Clang! MP Refresh 3",
+        "description": "Has a moderately good chance of restoring one MP of the move used if the move is successful.",
+        "positionQ": "-3",
+        "positionR": "4"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "2",
+        "displayTextShort": "Attack +20",
+        "displayTextFull": "Attack +20",
+        "description": "",
+        "positionQ": "-2",
+        "positionR": "4"
+    },
+    {
+        "energy": "4",
+        "moveLevel": "2",
+        "displayTextShort": "HP +20",
+        "displayTextFull": "HP +20",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "3"
+    },
+    {
+        "energy": "2",
+        "moveLevel": "2",
+        "displayTextShort": "Gyro Ball +4",
+        "displayTextFull": "Gyro Ball: Power +4",
+        "description": "",
+        "positionQ": "1",
+        "positionR": "3"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "2",
+        "displayTextShort": "Clang! Lockstep 9",
+        "displayTextFull": "Clang! Lockstep 9",
+        "description": "Charges the move gauges of all allied sync pairs by one when a move is successful.",
+        "positionQ": "2",
+        "positionR": "3"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "2",
+        "displayTextShort": "Unyielding 2",
+        "displayTextFull": "Unyielding 2",
+        "description": "When the user has endured the most recent hit and has 1 HP remaining, has moderate chance of allowing the user to endure an additional hit.",
+        "positionQ": "3",
+        "positionR": "3"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "Iron Tail OaR 1",
+        "displayTextFull": "Iron Tail: On a Roll 1",
+        "description": "Raises the chance of lowering stat values with the additional effects of moves.",
+        "positionQ": "-3",
+        "positionR": "-2"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "HP +50",
+        "displayTextFull": "HP +50",
+        "description": "",
+        "positionQ": "-1",
+        "positionR": "-3"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "3",
+        "displayTextShort": "Sync +25",
+        "displayTextFull": "Steel-Clad Iron Tail: Power +25",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "-3"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "Clang! BB 1",
+        "displayTextFull": "Clang! Beserk Bunch 1",
+        "description": "Raises the Attack of all allied sync pairs when a move is successful.",
+        "positionQ": "1",
+        "positionR": "-5"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Soothing Sand 1",
+        "displayTextFull": "Soothing Sand 1",
+        "description": "Restores the Pok\u00c3\u00a9mon's HP whenever it takes an action during a sandstorm.",
+        "positionQ": "2",
+        "positionR": "-6"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Recuperation 2",
+        "displayTextFull": "Recuperation 2",
+        "description": "Restores the user's HP after using a sync move.",
+        "positionQ": "-3",
+        "positionR": "5"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Impatient 1",
+        "displayTextFull": "Impatient 1",
+        "description": "Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attck move.",
+        "positionQ": "-1",
+        "positionR": "4"
+    },
+    {
+        "energy": "5",
+        "moveLevel": "3",
+        "displayTextShort": "Sync +25",
+        "displayTextFull": "Steel-Clad Iron Tail: Power +25",
+        "description": "",
+        "positionQ": "0",
+        "positionR": "3"
+    },
+    {
+        "energy": "10",
+        "moveLevel": "3",
+        "displayTextShort": "Gyro Ball SS9",
+        "displayTextFull": "Gyro Ball Surging Sand 9",
+        "description": "Powers up moves in a sandstorm.",
+        "positionQ": "1",
+        "positionR": "4"
+    },
+    {
+        "energy": "8",
+        "moveLevel": "3",
+        "displayTextShort": "Rejuvenate 6",
+        "displayTextFull": "Rejuvenate 6",
+        "description": "Charges the user's move gauge by six after using a sync move.",
+        "positionQ": "2",
+        "positionR": "4"
+    }
+]
