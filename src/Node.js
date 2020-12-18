@@ -24,12 +24,14 @@ class Node extends React.Component {
   render() {
     const node = this.props.node;
 
-    const hoverDescription = node.description.length > 0 ? <li>{node.description}</li> : '';
+    const displayText = decodeURIComponent(escape(node.displayTextFull));
+    const energyText = "Energy: " + node.energy;
+    const descriptionText = node.description.length > 0 ? <li>{decodeURIComponent(escape(node.description))}</li> : '';
     const hoverData = <div className='hoverData'>
       <ul>
-        <li>{node.displayTextFull}</li>
-        <li>Energy: {node.energy}</li>
-        {hoverDescription}
+        <li>{displayText}</li>
+        <li>{energyText}</li>
+        {descriptionText}
       </ul>
     </div>;
 

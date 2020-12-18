@@ -72,20 +72,35 @@ class SkillGrid extends React.Component {
       return <option key={name} value={name}>{name}</option>;
     });
 
+    // these should be determined by media queries
+    const gridWidth = 900;
+    const gridHeight = 900;
+    const viewBoxMinX = -125;
+    const viewBoxMinY = -125;
+    const viewBoxWidth = 250;
+    const viewBoxHeight = 250;
+    const viewBox = viewBoxMinX + " " + viewBoxMinY + " " + viewBoxWidth + " " + viewBoxHeight;
+
     return (
       <div className="skillGrid">
-        <Selector selection={this.state.unitSelection} selectionChange={this.switchUnit} options={options}/>
+        <div className="columnLeft">
+          <Selector selection={this.state.unitSelection} selectionChange={this.switchUnit} options={options}/>
+        </div>
 
-        <HexGrid width={800} height={800} viewBox="-110 -110 220 220">
-          <Layout size={{ x: 10, y: 10 }} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
-            {gridData}
-          </Layout>
-        </HexGrid>
+        <div className="columnMiddle">
+          <HexGrid width={gridWidth} height={gridHeight} viewBox={viewBox}>
+            <Layout size={{ x: 10, y: 10 }} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
+              {gridData}
+            </Layout>
+          </HexGrid>  
+        </div>
 
-        <svg data-tip="" data-for='dummyTooltip'/>
-        <ReactTooltip id='dummyTooltip'/>
+        <div className="columnRight">
+          <svg data-tip="" data-for='dummyTooltip' width={0} height={0}/>
+          <ReactTooltip id='dummyTooltip'/>
 
-        <ReactTooltip id='skillTooltip'>{this.state.hoverData}</ReactTooltip>
+          <ReactTooltip id='skillTooltip'>{this.state.hoverData}</ReactTooltip>
+        </div>
       </div>
     );
   }
