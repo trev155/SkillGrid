@@ -62,6 +62,18 @@ body {
   font-family: Arial;
 }
 
+/* ----- Resetter ----- */
+.resetButton {
+  display: block;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  font-size: 1.6em;
+  font-family: Arial; 
+}
+
 /* ----- Node Selections ----- */
 .energy {
   width: 90%;

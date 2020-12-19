@@ -1,7 +1,14 @@
 import React from 'react';
 
-const SelectionPanel = ({energyUsed, selections}) => {
-	const selectionsMap = selections.reduce(function(accumulation, currentSelection) {
+const SelectionPanel = ({gridData}) => {
+	const selectedNodes = gridData.filter(function(node) {
+		return node.activated;
+	});
+	const energyUsed = selectedNodes.reduce(function(accumulation, currentSelection) {
+		return accumulation + parseInt(currentSelection.energy);
+	}, 0);
+
+	const selectionsMap = selectedNodes.reduce(function(accumulation, currentSelection) {
 		const newAccumulation = accumulation;
 		if (parseInt(currentSelection.moveLevel) === 1) {
 			accumulation["level1"].push(currentSelection);
@@ -14,14 +21,14 @@ const SelectionPanel = ({energyUsed, selections}) => {
 	}, {"level1": [], "level2": [], "level3": []});
 
 	const selectionAlphaSorter = function(selectionA, selectionB) {
-		return selectionA.displayText.localeCompare(selectionB.displayText);
+		return selectionA.displayTextFull.localeCompare(selectionB.displayTextFull);
 	}
 	const levelOneSelections = selectionsMap["level1"].length === 0 ? "" : 
 		<div className="levelOneSelections">
 			<p>Level 1 Selections</p>
 			<ul>
 				{selectionsMap["level1"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.position}>{selection.displayText + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
 				})}
 			</ul>
 		</div>
@@ -30,7 +37,7 @@ const SelectionPanel = ({energyUsed, selections}) => {
 			<p>Level 2 Selections</p>
 			<ul>
 				{selectionsMap["level2"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.position}>{selection.displayText + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
 				})}
 			</ul>
 		</div>
@@ -39,7 +46,7 @@ const SelectionPanel = ({energyUsed, selections}) => {
 			<p>Level 3 Selections</p>
 			<ul>
 				{selectionsMap["level3"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.position}>{selection.displayText + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
 				})}
 			</ul>
 		</div>

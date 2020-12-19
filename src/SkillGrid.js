@@ -3,6 +3,7 @@ import axios from 'axios';
 import { HexGrid, Layout } from 'react-hexgrid';
 import ReactTooltip from 'react-tooltip';
 import Selector from './Selector';
+import Resetter from './Resetter';
 import Node from './Node';
 import SelectionPanel from './SelectionPanel';
 
@@ -16,19 +17,24 @@ class SkillGrid extends React.Component {
       hoverData: "",
       // unit names and selector
       unitNames: [],
-      unitSelection: "",
-      // selections
-      selections: [],
-      energyUsed: 0
+      unitSelection: ""
     };
 
+    // nodes - click and hover
+    this.toggleSelectedNode = this.toggleSelectedNode.bind(this);
     this.setHoverData = this.setHoverData.bind(this);
-    this.updateSelectionData = this.updateSelectionData.bind(this);
+    // reset button
+    this.clearSelectedNodes = this.clearSelectedNodes.bind(this);
+    // selector
     this.switchUnit = this.switchUnit.bind(this);
   }
 
   componentDidMount() {
     this.loadInitialData();
+  }
+
+  componentDidUpdate() {
+    ReactTooltip.rebuild();
   }
 
   loadInitialData() {
@@ -48,16 +54,18 @@ class SkillGrid extends React.Component {
 
   switchUnit(unitName) {
     this.setState({
-      "unitSelection": unitName,
-      "selections": [],
-      "energyUsed": 0
+      "unitSelection": unitName
     })
     this.getData(unitName);
   }
 
   getData(unitName) {
     axios.get("data/" + unitName + ".json").then(result => {
-      this.setState({"gridData": result.data});
+      const gridData = result.data;
+      for (let i = 0; i < gridData.length; i++) {
+        gridData[i].activated = false;
+      }
+      this.setState({"gridData": gridData});
     });
   }
 
@@ -67,15 +75,30 @@ class SkillGrid extends React.Component {
     });
   }
 
-  updateSelectionData(selection, isActivated) {
-    const updatedSelections = isActivated ? [...this.state.selections, selection] : this.state.selections.filter(s => s.position !== selection.position);
-    const energyUsed = updatedSelections.reduce(function(accumulator, currentValue) {
-      return accumulator + parseInt(currentValue.energy);
-    }, 0);
-    
+  toggleSelectedNode(selectedNode) {
+    const updatedGridData = this.state.gridData.map(function(node) {
+      const newNode = node;
+      if (parseInt(selectedNode.positionQ) === parseInt(node.positionQ) &&
+        parseInt(selectedNode.positionR) === parseInt(node.positionR)) {
+        newNode.activated = !newNode.activated;
+      }
+      return newNode;
+    });
+
     this.setState({
-     "selections": updatedSelections,
-     "energyUsed": energyUsed
+      "gridData": updatedGridData
+    }); 
+  }
+
+  clearSelectedNodes() {
+    const updatedGridData = this.state.gridData.map(function(node) {
+      const newNode = node;
+      newNode.activated = false;
+      return newNode;
+    });
+
+    this.setState({
+      "gridData": updatedGridData
     });
   }
 
@@ -84,8 +107,8 @@ class SkillGrid extends React.Component {
       const key = this.state.unitSelection + "-" + node.positionQ + "/" + node.positionR
       return (
         <Node key={key} node={node} 
-          updateHoverData={this.setHoverData} 
-          updateSelectionData={this.updateSelectionData}
+          clickFunction={this.toggleSelectedNode}
+          hoverFunction={this.setHoverData} 
         />
       );
     });
@@ -108,6 +131,7 @@ class SkillGrid extends React.Component {
       <div className="skillGrid">
         <div className="columnLeft">
           <Selector selection={this.state.unitSelection} selectionChangeHandler={this.switchUnit} options={options}/>
+          <Resetter clickFunction={this.clearSelectedNodes}/>
         </div>
 
         <div className="columnMiddle">
@@ -119,7 +143,7 @@ class SkillGrid extends React.Component {
         </div>
 
         <div className="columnRight">
-          <SelectionPanel energyUsed={this.state.energyUsed} selections={this.state.selections}/>
+          <SelectionPanel gridData={this.state.gridData}/>
 
           <svg data-tip="" data-for='dummyTooltip' width={0} height={0}/>
           <ReactTooltip id='dummyTooltip'/>
