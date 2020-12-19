@@ -4,6 +4,7 @@ import { HexGrid, Layout } from 'react-hexgrid';
 import ReactTooltip from 'react-tooltip';
 import Selector from './Selector';
 import Node from './Node';
+import SelectionPanel from './SelectionPanel';
 
 class SkillGrid extends React.Component {
   constructor(props) {
@@ -66,30 +67,11 @@ class SkillGrid extends React.Component {
     });
   }
 
-  calculateSelectionEnergy() {
-    let energyUsed = 0;
-    for (let i = 0; i < this.state.selections.length; i++) {
-      energyUsed += parseInt(this.state.selections[i].energy);
-    }
-    return energyUsed;
-  }
-
   updateSelectionData(selection, isActivated) {
-    let updatedSelections = [];
-    if (isActivated) {
-      updatedSelections = [...this.state.selections, selection];
-    } else {
-      for (let i = 0; i < this.state.selections.length; i++) {
-        if (selection.position !== this.state.selections[i].position) {
-          updatedSelections.push(this.state.selections[i]);
-        }
-      }
-    }
-
-    let energyUsed = 0;
-    for (let i = 0; i < updatedSelections.length; i++) {
-      energyUsed += parseInt(updatedSelections[i].energy);
-    }
+    const updatedSelections = isActivated ? [...this.state.selections, selection] : this.state.selections.filter(s => s.position !== selection.position);
+    const energyUsed = updatedSelections.reduce(function(accumulator, currentValue) {
+      return accumulator + parseInt(currentValue.energy);
+    }, 0);
     
     this.setState({
      "selections": updatedSelections,
@@ -102,7 +84,7 @@ class SkillGrid extends React.Component {
       const key = this.state.unitSelection + "-" + node.positionQ + "/" + node.positionR
       return (
         <Node key={key} node={node} 
-          setHoverData={this.setHoverData} 
+          updateHoverData={this.setHoverData} 
           updateSelectionData={this.updateSelectionData}
         />
       );
@@ -125,7 +107,7 @@ class SkillGrid extends React.Component {
     return (
       <div className="skillGrid">
         <div className="columnLeft">
-          <Selector selection={this.state.unitSelection} selectionChange={this.switchUnit} options={options}/>
+          <Selector selection={this.state.unitSelection} selectionChangeHandler={this.switchUnit} options={options}/>
         </div>
 
         <div className="columnMiddle">
@@ -137,10 +119,7 @@ class SkillGrid extends React.Component {
         </div>
 
         <div className="columnRight">
-          <div className="energy">{"Energy Used: " + this.state.energyUsed}</div>
-          <div className="selectionsPanel"><ul>{this.state.selections.map(function(selection) {
-            return <li key={selection.position}>{selection.displayText + " (" + selection.energy + ")"}</li>
-          })}</ul></div>
+          <SelectionPanel energyUsed={this.state.energyUsed} selections={this.state.selections}/>
 
           <svg data-tip="" data-for='dummyTooltip' width={0} height={0}/>
           <ReactTooltip id='dummyTooltip'/>

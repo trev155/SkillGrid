@@ -18,13 +18,13 @@ class Node extends React.Component {
   }
 
   componentDidUpdate() {
-    ReactTooltip.rebuild()
+    ReactTooltip.rebuild();
   }
 
   render() {
     const node = this.props.node;
-
-    const isActivated = this.state.activated;
+    const updateSelectionData = this.props.updateSelectionData;
+    const updateHoverData = this.props.updateHoverData;
 
     const displayText = decodeURIComponent(escape(node.displayTextFull));
     const energyText = "Energy: " + node.energy;
@@ -38,9 +38,8 @@ class Node extends React.Component {
     </div>;
 
     const activateAction = this.activateAction;
-    const updateHoverData = this.props.setHoverData;
-    const updateSelectionData = this.props.updateSelectionData;
-
+    const nodeIsActivated = this.state.activated;
+    
     return (
       <Hexagon
         className={this.state.activated ? "activated" : ""}
@@ -49,8 +48,9 @@ class Node extends React.Component {
           updateSelectionData({
             "position": node.positionQ + "/" + node.positionR,
             "displayText": displayText,
-            "energy": node.energy
-          }, !isActivated);
+            "energy": node.energy,
+            "moveLevel": node.moveLevel
+          }, !nodeIsActivated);
         }}
         onMouseEnter={function() {
           updateHoverData(hoverData);
