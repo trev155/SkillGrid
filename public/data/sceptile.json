@@ -419,11 +419,8 @@
         "displayTextShort": "Brainy Rush 6",
         "displayTextFull": "Brainy Rush 6",
         "description": "Radically raises the user's Sp. Atk after using a sync move.",
-        "positionQ": "",
-        "positionR": "2",
-        "null": [
-            "2"
-        ]
+        "positionQ": "2",
+        "positionR": "2"
     },
     {
         "energy": "5",

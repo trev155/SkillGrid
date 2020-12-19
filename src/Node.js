@@ -24,6 +24,8 @@ class Node extends React.Component {
   render() {
     const node = this.props.node;
 
+    const isActivated = this.state.activated;
+
     const displayText = decodeURIComponent(escape(node.displayTextFull));
     const energyText = "Energy: " + node.energy;
     const descriptionText = node.description.length > 0 ? <li>{decodeURIComponent(escape(node.description))}</li> : '';
@@ -35,12 +37,21 @@ class Node extends React.Component {
       </ul>
     </div>;
 
+    const activateAction = this.activateAction;
     const updateHoverData = this.props.setHoverData;
+    const updateSelectionData = this.props.updateSelectionData;
 
     return (
-      <Hexagon 
+      <Hexagon
         className={this.state.activated ? "activated" : ""}
-        onClick={this.activateAction}
+        onClick={function() {
+          activateAction();
+          updateSelectionData({
+            "position": node.positionQ + "/" + node.positionR,
+            "displayText": displayText,
+            "energy": node.energy
+          }, !isActivated);
+        }}
         onMouseEnter={function() {
           updateHoverData(hoverData);
         }}

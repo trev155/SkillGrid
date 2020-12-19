@@ -30,7 +30,7 @@ def loadData():
 			for row in csvReader:
 				data.append(row)
 
-		with open(outPath, "r+", encoding="utf-8") as outfile:
+		with open(outPath, "w", encoding="utf-8") as outfile:
 			json.dump(data, outfile, indent=4)
 
 		print("-- Done Processing: " + outPath)
