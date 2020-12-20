@@ -70,6 +70,7 @@ class SkillGrid extends React.Component {
         node.positionR = parseInt(node.positionR);
         return node;
       });
+      
       this.setState({"gridData": gridData});
     });
   }

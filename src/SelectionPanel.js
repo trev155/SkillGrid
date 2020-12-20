@@ -28,7 +28,9 @@ const SelectionPanel = ({gridData}) => {
 			<p>Level 1 Selections</p>
 			<ul>
 				{selectionsMap["level1"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>
+						{decodeURIComponent(escape(selection.displayTextFull)) + " (" + selection.energy + ")"}
+					</li>
 				})}
 			</ul>
 		</div>
@@ -37,7 +39,9 @@ const SelectionPanel = ({gridData}) => {
 			<p>Level 2 Selections</p>
 			<ul>
 				{selectionsMap["level2"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>
+						{decodeURIComponent(escape(selection.displayTextFull)) + " (" + selection.energy + ")"}
+					</li>
 				})}
 			</ul>
 		</div>
@@ -46,7 +50,9 @@ const SelectionPanel = ({gridData}) => {
 			<p>Level 3 Selections</p>
 			<ul>
 				{selectionsMap["level3"].sort(selectionAlphaSorter).map(function(selection) {
-					return <li key={selection.positionQ + "/" + selection.positionR}>{selection.displayTextFull + " (" + selection.energy + ")"}</li>
+					return <li key={selection.positionQ + "/" + selection.positionR}>
+						{decodeURIComponent(escape(selection.displayTextFull)) + " (" + selection.energy + ")"}
+					</li>
 				})}
 			</ul>
 		</div>
