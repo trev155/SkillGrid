@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MoveLevel = ({moveLevel, selectionChangeHandler}) => {
   return (
@@ -15,5 +16,10 @@ const MoveLevel = ({moveLevel, selectionChangeHandler}) => {
     </select>
   );
 }
+
+MoveLevel.propTypes = {
+	moveLevel: PropTypes.number.isRequired,
+	selectionChangeHandler: PropTypes.func.isRequired
+};
 
 export default MoveLevel;

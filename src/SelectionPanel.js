@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const SelectionPanel = ({gridData}) => {
 	const selectedNodes = gridData.filter(function(node) {
@@ -68,5 +69,9 @@ const SelectionPanel = ({gridData}) => {
 		</div>
 	);
 }
+
+SelectionPanel.propTypes = {
+  gridData: PropTypes.array.isRequired
+};
 
 export default SelectionPanel;

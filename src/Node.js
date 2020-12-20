@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Hexagon, Text } from 'react-hexgrid';
 
 const Node = ({node, clickFunction, hoverFunction, moveLevel}) => {
@@ -35,5 +36,12 @@ const Node = ({node, clickFunction, hoverFunction, moveLevel}) => {
     </Hexagon>
   );
 }
+
+Node.propTypes = {
+  node: PropTypes.object,
+  clickFunction: PropTypes.func,
+  hoverFunction: PropTypes.func,
+  moveLevel: PropTypes.number
+};
 
 export default Node;

@@ -30,6 +30,9 @@ function SkillGrid() {
       });
       setUnitNames(unitNames);
       switchUnit("Mew");
+    }).catch(function(err) {
+      console.log("Could not fetch unit name data.");
+      console.log(err.message);
     });
   }
 
@@ -50,8 +53,11 @@ function SkillGrid() {
         node.positionR = parseInt(node.positionR);
         return node;
       });
-      
+
       setGridData(gridData);
+    }).catch(function(err) {
+      console.log("Could not fetch unit data.");
+      console.log(err.message);
     });
   }
 
@@ -110,7 +116,9 @@ function SkillGrid() {
       <div className="columnLeft">
         <Selector selection={unitSelection} selectionChangeHandler={switchUnit} options={options}/>
         <Resetter clickFunction={clearSelectedNodes}/>
-        <MoveLevel moveLevel={moveLevel} selectionChangeHandler={setMoveLevel}/>
+        <MoveLevel moveLevel={moveLevel} selectionChangeHandler={function(level) { 
+          setMoveLevel(parseInt(level));
+        }}/>
       </div>
 
       <div className="columnMiddle">
@@ -124,9 +132,9 @@ function SkillGrid() {
       <div className="columnRight">
         <SelectionPanel gridData={gridData}/>
 
+        <ReactTooltip id='skillTooltip'>{hoverData}</ReactTooltip>
         <svg data-tip="" data-for='dummyTooltip' width={0} height={0}/>
         <ReactTooltip id='dummyTooltip'/>
-        <ReactTooltip id='skillTooltip'>{hoverData}</ReactTooltip>
       </div>
     </div>
   );
