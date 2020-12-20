@@ -2,9 +2,10 @@ import React from 'react';
 import axios from 'axios';
 import { HexGrid, Layout } from 'react-hexgrid';
 import ReactTooltip from 'react-tooltip';
+import Node from './Node';
 import Selector from './Selector';
 import Resetter from './Resetter';
-import Node from './Node';
+import MoveLevel from './MoveLevel';
 import SelectionPanel from './SelectionPanel';
 
 class SkillGrid extends React.Component {
@@ -15,9 +16,10 @@ class SkillGrid extends React.Component {
       gridData: [],
       // tooltip data
       hoverData: "",
-      // unit names and selector
+      // unit properties
       unitNames: [],
-      unitSelection: ""
+      unitSelection: "",
+      moveLevel: 5
     };
 
     // nodes - click and hover
@@ -27,6 +29,8 @@ class SkillGrid extends React.Component {
     this.clearSelectedNodes = this.clearSelectedNodes.bind(this);
     // selector
     this.switchUnit = this.switchUnit.bind(this);
+    // move level
+    this.switchMoveLevel = this.switchMoveLevel.bind(this);
   }
 
   componentDidMount() {
@@ -38,33 +42,34 @@ class SkillGrid extends React.Component {
   }
 
   loadInitialData() {
-    // load unit names
     axios.get("data/all_units.txt").then(result => {
-      let unitNames = [];
-      const unitData = result.data.split("\n");
-      for (let i = 1; i < unitData.length; i++) {
-        unitNames.push(unitData[i].trim().split(",")[1]);
-      }
+      const unitNames = result.data.split("\n").splice(1).map(function(line) {
+        return line.trim().split(",")[1];
+      });
       this.setState({"unitNames": unitNames})
-
-      // load default unit
       this.switchUnit("Mew");
     });
   }
 
   switchUnit(unitName) {
     this.setState({
-      "unitSelection": unitName
+      "unitSelection": unitName,
+      "moveLevel": 5
     })
     this.getData(unitName);
   }
 
   getData(unitName) {
     axios.get("data/" + unitName + ".json").then(result => {
-      const gridData = result.data;
-      for (let i = 0; i < gridData.length; i++) {
-        gridData[i].activated = false;
-      }
+      const gridData = result.data.map(function(jsonnode) {
+        const node = jsonnode;
+        node.activated = false;
+        node.energy = parseInt(node.energy);
+        node.moveLevel = parseInt(node.moveLevel);
+        node.positionQ = parseInt(node.positionQ);
+        node.positionR = parseInt(node.positionR);
+        return node;
+      });
       this.setState({"gridData": gridData});
     });
   }
@@ -76,10 +81,13 @@ class SkillGrid extends React.Component {
   }
 
   toggleSelectedNode(selectedNode) {
+    if (this.state.moveLevel < selectedNode.moveLevel) {
+      return;
+    }
+
     const updatedGridData = this.state.gridData.map(function(node) {
       const newNode = node;
-      if (parseInt(selectedNode.positionQ) === parseInt(node.positionQ) &&
-        parseInt(selectedNode.positionR) === parseInt(node.positionR)) {
+      if (selectedNode.positionQ === node.positionQ && selectedNode.positionR === node.positionR) {
         newNode.activated = !newNode.activated;
       }
       return newNode;
@@ -102,19 +110,25 @@ class SkillGrid extends React.Component {
     });
   }
 
+  switchMoveLevel(level) {
+    this.setState({
+      "moveLevel": level
+    });
+  }
+
   render() {
     const gridData = this.state.gridData.map(node => {
       const key = this.state.unitSelection + "-" + node.positionQ + "/" + node.positionR
       return (
-        <Node key={key} node={node} 
+        <Node key={key} node={node}
           clickFunction={this.toggleSelectedNode}
           hoverFunction={this.setHoverData} 
+          moveLevel={this.state.moveLevel}
         />
       );
     });
 
-    const names = this.state.unitNames;
-    const options = names.map(name => {
+    const options = this.state.unitNames.map(name => {
       return <option key={name} value={name}>{name}</option>;
     });
 
@@ -132,6 +146,7 @@ class SkillGrid extends React.Component {
         <div className="columnLeft">
           <Selector selection={this.state.unitSelection} selectionChangeHandler={this.switchUnit} options={options}/>
           <Resetter clickFunction={this.clearSelectedNodes}/>
+          <MoveLevel moveLevel={this.state.moveLevel} selectionChangeHandler={this.switchMoveLevel}/>
         </div>
 
         <div className="columnMiddle">

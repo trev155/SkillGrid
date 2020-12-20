@@ -1,7 +1,7 @@
 import React from 'react';
 import { Hexagon, Text } from 'react-hexgrid';
 
-const Node = ({node, clickFunction, hoverFunction}) => {
+const Node = ({node, clickFunction, hoverFunction, moveLevel}) => {
   const displayText = decodeURIComponent(escape(node.displayTextFull));
   const energyText = "Energy: " + node.energy;
   const descriptionText = node.description.length > 0 ? <li>{decodeURIComponent(escape(node.description))}</li> : '';
@@ -13,16 +13,24 @@ const Node = ({node, clickFunction, hoverFunction}) => {
     </ul>
   </div>;
   
+  let classes = "";
+  if (node.activated) {
+    classes += "activated ";
+  }
+  if (node.moveLevel > moveLevel) {
+    classes += "moveLevelGated";
+  }
+
   return (
     <Hexagon
-      className={node.activated ? "activated" : ""}
+      className={classes}
       onClick={function() {
         clickFunction(node);
       }}
       onMouseEnter={function() {
         hoverFunction(hoverData);
       }}
-      q={parseInt(node.positionQ)} r={parseInt(node.positionR)} s={0}>
+      q={node.positionQ} r={node.positionR} s={0}>
       <Text>{node.displayTextShort}</Text>
     </Hexagon>
   );

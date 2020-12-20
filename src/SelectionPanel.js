@@ -5,16 +5,16 @@ const SelectionPanel = ({gridData}) => {
 		return node.activated;
 	});
 	const energyUsed = selectedNodes.reduce(function(accumulation, currentSelection) {
-		return accumulation + parseInt(currentSelection.energy);
+		return accumulation + currentSelection.energy;
 	}, 0);
 
 	const selectionsMap = selectedNodes.reduce(function(accumulation, currentSelection) {
 		const newAccumulation = accumulation;
-		if (parseInt(currentSelection.moveLevel) === 1) {
+		if (currentSelection.moveLevel === 1) {
 			accumulation["level1"].push(currentSelection);
-		} else if (parseInt(currentSelection.moveLevel) === 2) {
+		} else if (currentSelection.moveLevel === 2) {
 			accumulation["level2"].push(currentSelection);
-		} else if (parseInt(currentSelection.moveLevel) === 3) {
+		} else if (currentSelection.moveLevel === 3) {
 			accumulation["level3"].push(currentSelection);
 		}
 		return newAccumulation;
