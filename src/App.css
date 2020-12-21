@@ -134,35 +134,72 @@ body {
 }
 
 /* ----- react-hexgrid ----- */
+/* background color of hexagons */
 svg g {
-  /* background color of hexagons */
-	fill: rgb(10, 3, 12);
-  fill-opacity: 0.6;
+  fill-opacity: 0.3;
+  
 }
-svg g:hover {
-  /* background colour of hexagon when hovering */
-	fill-opacity: 1;
+svg g:hover { 
+  fill-opacity: 1;
+}
+svg g.activated {
+  fill-opacity: 1;
+}
+
+svg g.stat{
+  fill: rgb(30, 20, 255);
+}
+svg g.move {
+  fill: rgb(55, 138, 3);
+}
+svg g.moveEffect {
+  fill: rgb(150, 4, 4);
+}
+svg g.sync {
+  fill: rgb(2, 108, 233);
+}
+svg g.passive {
+  fill: rgb(210, 155, 0);
+}
+
+svg g.stat.activated{
+  
+}
+svg g.move.activated {
+  
+}
+svg g.move-passive.activated {
+
+}
+svg g.sync.activated {
+
+}
+svg g.passive.activated {
+
 }
 
 /* hexagon clicked */
 svg g.activated .hexagon {
-	fill: rgb(150, 100, 50);
+  fill-opacity: 1;
 }
 
 /* outline of hexagons */
 svg g polygon {
-	stroke: rgb(150, 222, 122);
-	stroke-width: 0.4;
+	stroke: rgb(30, 201, 102);
+	stroke-width: 0.1;
 	transition: fill-opacity .5s;
+}
+svg g.activated polygon {
+  stroke-width: 0.8;
 }
 
 /* text inside hexagons */
 svg g text {
-	fill: rgb(15, 244, 222);
+	fill: rgb(15, 255, 222);
 	fill-opacity: 0.9;
 	transition: fill-opacity .5s;
 
-  font-size: 0.18em;
+  font-size: 0.19em;
   font-family: Tahoma;
 }
 

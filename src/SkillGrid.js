@@ -15,6 +15,8 @@ function SkillGrid() {
   const [unitSelection, setUnitSelection] = useState("");
   const [moveLevel, setMoveLevel] = useState(5);
 
+  const defaultUnit = "Steelix";
+
   useEffect(() => {
     loadInitialData();
   }, []);
@@ -29,7 +31,7 @@ function SkillGrid() {
         return line.trim().split(",")[1];
       });
       setUnitNames(unitNames);
-      switchUnit("Mew");
+      switchUnit(defaultUnit);
     }).catch(function(err) {
       console.log("Could not fetch unit name data.");
       console.log(err.message);
@@ -51,6 +53,7 @@ function SkillGrid() {
         node.moveLevel = parseInt(node.moveLevel);
         node.positionQ = parseInt(node.positionQ);
         node.positionR = parseInt(node.positionR);
+        node.nodeType = parseInt(node.nodeType);
         return node;
       });
 

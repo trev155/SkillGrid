@@ -1,49 +1,49 @@
-energy|moveLevel|displayTextShort|displayTextFull|description|positionQ|positionR
-0|1|Spd +5|Speed +5||0|-1
-0|1|HP +10|HP +10||1|-1
-0|1|Sp. Atk +5|Sp. Atk +5||1|0
-0|1|Defense +5|Defense +5||0|1
-0|1|Sp. Atk +5|Sp. Atk +5||-1|1
-0|1|Sp. Def +5|Sp. Def +5||-1|0
-2|1|Sp. Def +5|Sp. Def +5||-1|-1
-2|1|Sp. Def +5|Sp. Def +5||-1|-2
-2|1|Sp. Def +5|Sp. Def +5||-2|-1
-4|1|Psychic +3|Psychic +3||-3|-1
-4|1|Psychic +3|Psychic +3||-3|-2
-6|1|Psychic MGR 3|Psychic: Move Gauge Refresh 3|Has a moderately good chance of charging the user's move gauge by one when a move is successful.|-2|-2
-2|1|Sp. Atk +5|Sp. Atk +5||1|-2
-2|1|Sp. Atk +5|Sp. Atk +5||1|-3
-2|1|Sp. Atk +5|Sp. Atk +5||2|-3
-7|1|P.T. MPR 3|Psychic Terrain: MP Refresh 3|Has a moderately good chance of restoring one MP of the move used if the move is successful.|2|-4
-4|1|Psychic +3|Psychic +3||3|-4
-4|1|HP +20|HP +20||3|-5
-2|1|Speed +5|Speed +5||-2|1
-4|1|Stored Power +1|Stored Power +1||-3|2
-6|1|Stored Power MGR 2|Stored Power: Move Gauge Refresh 2|Has a moderate chance of charging the user's move gauge by one when a move is successful.|-2|2
-4|1|Stored Power +1|Stored Power +1||-1|2
-4|1|Stored Power +1|Stored Power +1||1|1
-7|1|YSYL MPR 2|You Snooze, You Lose! MP Refresh 2|Has a moderate chance of restoring one MP of the move used if the move is successful.|2|0
-2|1|Speed +5|Speed +5||2|-1
-2|1|Defense +5|Defense +5||3|-1
-8|2|Lucky Entry 2|Lucky Entry 2|Sharply raises the user's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when the Pokémon enters a battle|-3|-3
-4|2|Defense +10|Defense +10||-2|-3
-4|2|Psychic +3|Psychic +3||-1|-3
-4|2|Psychic +3|Psychic +3||1|-4
-4|2|Defense +10|Defense +10||2|-5
-8|2|Precognition 2|Precognition 2|Quickly charges the move gauge when the field is Psychic Terrain.|3|-6
-4|2|Sp. Atk +10|Sp. Atk +10||-3|3
-4|2|HP +20|HP +20||-3|4
-4|2|Stored Power +1|Stored Power +1||-2|3
-6|2|Mutually Assured|Mutually Assured|Whenever the user becomes poisoned, badly poisoned, paralyzed, or burned from an opponent's move, the same status condition is also applied to that opponent.|2|1
-10|2|Weird Recovery 1|Weird Recovery 1|Restores the Pokémon's HP whenever it takes an action when the field is Psychic Terrain.|3|0
-7|2|Sp. Def +20|Sp. Def +20||3|1
-10|3|Brainteaser|Brainteaser|The more the target's Sp. Def has been lowered, the more it powers up moves.|-2|-4
-7|3|Speed +20|Speed +20||-1|-4
-5|3|Sync +25|Truth-Seeking Future Sight +25||0|-3
-8|3|P.T. Pep Rally 1|Psychic Terrain Pep Rally 1|Raises the Speed of all allied sync pairs when a move is successful.|1|-5
-10|3|P.T. TH&H|Psychic Terrain Team Hit and Heal|Makes all allied sync pairs gradually heal themselves when a move is successful.|2|-6
-8|3|Weird Shield|Weird Shield|Sp. Def increases 50% when the field is Psychic Terrain.|-2|4
-15|3|Impervious|Impervious|Stats cannot be lowered.|-1|3
-5|3|Sync +25|Truth-Seeking Future Sight +25||0|3
-4|3|Stored Power +1|Stored Power +1||1|2
-8|3|Unfortuitous 3|Unfortuitous 3|Has a moderately good chance of lowering the target's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when an attack is successful.|2|2
+energy|moveLevel|nodeType|displayTextShort|displayTextFull|description|positionQ|positionR
+0|1|1|Spd +5|Speed +5||0|-1
+0|1|1|HP +10|HP +10||1|-1
+0|1|1|Sp. Atk +5|Sp. Atk +5||1|0
+0|1|1|Defense +5|Defense +5||0|1
+0|1|1|Sp. Atk +5|Sp. Atk +5||-1|1
+0|1|1|Sp. Def +5|Sp. Def +5||-1|0
+2|1|1|Sp. Def +5|Sp. Def +5||-1|-1
+2|1|1|Sp. Def +5|Sp. Def +5||-1|-2
+2|1|1|Sp. Def +5|Sp. Def +5||-2|-1
+4|1|2|Psychic +3|Psychic +3||-3|-1
+4|1|2|Psychic +3|Psychic +3||-3|-2
+6|1|3|Psychic MGR 3|Psychic: Move Gauge Refresh 3|Has a moderately good chance of charging the user's move gauge by one when a move is successful.|-2|-2
+2|1|1|Sp. Atk +5|Sp. Atk +5||1|-2
+2|1|1|Sp. Atk +5|Sp. Atk +5||1|-3
+2|1|1|Sp. Atk +5|Sp. Atk +5||2|-3
+7|1|3|P.T. MPR 3|Psychic Terrain: MP Refresh 3|Has a moderately good chance of restoring one MP of the move used if the move is successful.|2|-4
+4|1|2|Psychic +3|Psychic +3||3|-4
+4|1|1|HP +20|HP +20||3|-5
+2|1|1|Speed +5|Speed +5||-2|1
+4|1|2|Stored Power +1|Stored Power +1||-3|2
+6|1|3|Stored Power MGR 2|Stored Power: Move Gauge Refresh 2|Has a moderate chance of charging the user's move gauge by one when a move is successful.|-2|2
+4|1|2|Stored Power +1|Stored Power +1||-1|2
+4|1|2|Stored Power +1|Stored Power +1||1|1
+7|1|3|YSYL MPR 2|You Snooze, You Lose! MP Refresh 2|Has a moderate chance of restoring one MP of the move used if the move is successful.|2|0
+2|1|1|Speed +5|Speed +5||2|-1
+2|1|1|Defense +5|Defense +5||3|-1
+8|2|5|Lucky Entry 2|Lucky Entry 2|Sharply raises the user's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when the Pokémon enters a battle|-3|-3
+4|2|1|Defense +10|Defense +10||-2|-3
+4|2|2|Psychic +3|Psychic +3||-1|-3
+4|2|2|Psychic +3|Psychic +3||1|-4
+4|2|1|Defense +10|Defense +10||2|-5
+8|2|5|Precognition 2|Precognition 2|Quickly charges the move gauge when the field is Psychic Terrain.|3|-6
+4|2|1|Sp. Atk +10|Sp. Atk +10||-3|3
+4|2|1|HP +20|HP +20||-3|4
+4|2|2|Stored Power +1|Stored Power +1||-2|3
+6|2|5|Mutually Assured|Mutually Assured|Whenever the user becomes poisoned, badly poisoned, paralyzed, or burned from an opponent's move, the same status condition is also applied to that opponent.|2|1
+10|2|5|Weird Recovery 1|Weird Recovery 1|Restores the Pokémon's HP whenever it takes an action when the field is Psychic Terrain.|3|0
+7|2|1|Sp. Def +20|Sp. Def +20||3|1
+10|3|5|Brainteaser|Brainteaser|The more the target's Sp. Def has been lowered, the more it powers up moves.|-2|-4
+7|3|1|Speed +20|Speed +20||-1|-4
+5|3|4|Sync +25|Truth-Seeking Future Sight +25||0|-3
+8|3|3|P.T. Pep Rally 1|Psychic Terrain Pep Rally 1|Raises the Speed of all allied sync pairs when a move is successful.|1|-5
+10|3|3|P.T. TH&H|Psychic Terrain Team Hit and Heal|Makes all allied sync pairs gradually heal themselves when a move is successful.|2|-6
+8|3|5|Weird Shield|Weird Shield|Sp. Def increases 50% when the field is Psychic Terrain.|-2|4
+15|3|5|Impervious|Impervious|Stats cannot be lowered.|-1|3
+5|3|4|Sync +25|Truth-Seeking Future Sight +25||0|3
+4|3|2|Stored Power +1|Stored Power +1||1|2
+8|3|5|Unfortuitous 3|Unfortuitous 3|Has a moderately good chance of lowering the target's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when an attack is successful.|2|2

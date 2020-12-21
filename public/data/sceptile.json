@@ -2,6 +2,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Spd +5",
         "displayTextFull": "Speed +5",
         "description": "",
@@ -11,6 +12,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +10",
         "displayTextFull": "HP +10",
         "description": "",
@@ -20,6 +22,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Attack +5",
         "displayTextFull": "Attack +5",
         "description": "",
@@ -29,6 +32,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Defense +5",
         "displayTextFull": "Defense +5",
         "description": "",
@@ -38,6 +42,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -47,6 +52,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -56,6 +62,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "5",
         "displayTextShort": "Speeding Sun 3",
         "displayTextFull": "Speeding Sun 3",
         "description": "Quickly charges the move gauge when the weather is sunny.",
@@ -65,6 +72,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "5",
         "displayTextShort": "Solar Shield",
         "displayTextFull": "Solar Shield",
         "description": "This Pok\u00c3\u00a9mon is not affected by status conditions when the weather is sunny.",
@@ -74,6 +82,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "D.H.+ MPR 2",
         "displayTextFull": "Dire Hit+ MP Refresh 2",
         "description": "Has a moderate chance of restoring one MP of the move used if the move is successful.",
@@ -83,6 +92,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +10",
         "displayTextFull": "HP +10",
         "description": "",
@@ -92,6 +102,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +10",
         "displayTextFull": "HP +10",
         "description": "",
@@ -101,6 +112,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -110,6 +122,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +10",
         "displayTextFull": "HP +10",
         "description": "",
@@ -119,6 +132,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "N.T.B. MPR 2",
         "displayTextFull": "No Turning Back! MP Refresh 2",
         "description": "Has a moderate chance of restoring one MP of the move used if the move is successful.",
@@ -128,6 +142,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Attack +5",
         "displayTextFull": "Attack +5",
         "description": "",
@@ -137,6 +152,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Defense +5",
         "displayTextFull": "Defense +5",
         "description": "",
@@ -146,6 +162,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -155,6 +172,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "B. Seed MGR 3",
         "displayTextFull": "Bullet Seed: Move Gauge Refresh 3",
         "description": "Has a moderately good chance of charging the user's move gauge by one when a move is successful.",
@@ -164,6 +182,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "B. Seed +1",
         "displayTextFull": "Bullet Seed: Power +1",
         "description": "",
@@ -173,6 +192,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "B. Seed +1",
         "displayTextFull": "Bullet Seed: Power +1",
         "description": "",
@@ -182,6 +202,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Speed +5",
         "displayTextFull": "Speed +5",
         "description": "",
@@ -191,6 +212,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Defense +5",
         "displayTextFull": "Defense +5",
         "description": "",
@@ -200,6 +222,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -209,6 +232,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "L.S. MGR 3",
         "displayTextFull": "Leaf Storm: Move Gauge Refresh 3",
         "description": "Has a moderately good chance of charging the user's move gauge by one when a move is successful.",
@@ -218,6 +242,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Leaf Storm +3",
         "displayTextFull": "Leaf Storm: Power +3",
         "description": "",
@@ -227,6 +252,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Leaf Storm +3",
         "displayTextFull": "Leaf Storm: Power +3",
         "description": "",
@@ -236,6 +262,7 @@
     {
         "energy": "7",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Healing Sun 1",
         "displayTextFull": "Healing Sun 1",
         "description": "Restores the Pok\u00c3\u00a9mon's HP whenever it takes an action while the weather is sunny.",
@@ -245,6 +272,7 @@
     {
         "energy": "8",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +20",
         "displayTextFull": "Sp. Atk +20",
         "description": "",
@@ -254,6 +282,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "Leaf Storm +3",
         "displayTextFull": "Leaf Storm: Power +3",
         "description": "",
@@ -263,6 +292,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "Leaf Storm +3",
         "displayTextFull": "Leaf Storm: Power +3",
         "description": "",
@@ -272,6 +302,7 @@
     {
         "energy": "5",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "L.S. Acc +5",
         "displayTextFull": "Leaf Storm: Accuracy +5",
         "description": "",
@@ -281,6 +312,7 @@
     {
         "energy": "7",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Speed +20",
         "displayTextFull": "Speed +20",
         "description": "",
@@ -290,6 +322,7 @@
     {
         "energy": "8",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Inertia",
         "displayTextFull": "Inertia",
         "description": "The higher the user's Speed, the more it powers up sync moves.",
@@ -299,6 +332,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "B. Seed +1",
         "displayTextFull": "Bullet Seed: Power +1",
         "description": "",
@@ -308,6 +342,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Attack +10",
         "displayTextFull": "Attack +10",
         "description": "",
@@ -317,6 +352,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "B. Seed +1",
         "displayTextFull": "Bullet Seed: Power +1",
         "description": "",
@@ -326,6 +362,7 @@
     {
         "energy": "8",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Ramming Speed",
         "displayTextFull": "Ramming Speed",
         "description": "The more the user's Speed has been raised, the more it powers up moves",
@@ -333,17 +370,19 @@
         "positionR": "1"
     },
     {
-        "energy": "4",
+        "energy": "8",
         "moveLevel": "2",
-        "displayTextShort": "B. Seed +1",
-        "displayTextFull": "Bullet Seed: Power +1",
-        "description": "",
+        "nodeType": "3",
+        "displayTextShort": "B. Seed S 1",
+        "displayTextFull": "Bullet Seed: Staggering 1",
+        "description": "Has a small chance of making the target flinch when an attack is successful.",
         "positionQ": "3",
         "positionR": "0"
     },
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Leaf Blade of Sundering: Power +25",
         "description": "",
@@ -353,6 +392,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Charging Sun 5",
         "displayTextFull": "Charging Sun 5",
         "description": "Powers up moves when the weather is sunny.",
@@ -362,6 +402,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Leaf Blade of Sundering: Power +25",
         "description": "",
@@ -371,6 +412,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "3",
         "displayTextShort": "L.S. MS 2",
         "displayTextFull": "Leaf Storm Mind Swell 2",
         "description": "Has a moderate chance of raising the user's Sp. Atk when the user's Pok\u00c3\u00a9mon uses a move.",
@@ -380,6 +422,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "2",
         "displayTextShort": "L.S. Acc +5",
         "displayTextFull": "Leaf Storm: Accuracy +5",
         "description": "",
@@ -389,6 +432,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Amped Up 1",
         "displayTextFull": "Amped Up 1",
         "description": "Raises the Pok\u00c3\u00a9mon's Speed when it lands a critical hit.",
@@ -398,6 +442,7 @@
     {
         "energy": "4",
         "moveLevel": "3",
+        "nodeType": "2",
         "displayTextShort": "B. Seed +1",
         "displayTextFull": "B. Seed +1",
         "description": "",
@@ -407,6 +452,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Leaf Blade of Sundering: Power +25",
         "description": "",
@@ -416,6 +462,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Brainy Rush 6",
         "displayTextFull": "Brainy Rush 6",
         "description": "Radically raises the user's Sp. Atk after using a sync move.",
@@ -425,6 +472,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Leaf Blade of Sundering: Power +25",
         "description": "",

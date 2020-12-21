@@ -19,7 +19,18 @@ const Node = ({node, clickFunction, hoverFunction, moveLevel}) => {
     classes += "activated ";
   }
   if (node.moveLevel > moveLevel) {
-    classes += "moveLevelGated";
+    classes += "moveLevelGated ";
+  }
+  if (node.nodeType === 1) {
+    classes += "stat";
+  } else if (node.nodeType === 2) {
+    classes += "move";
+  } else if (node.nodeType === 3) {
+    classes += "moveEffect";
+  } else if (node.nodeType === 4) {
+    classes += "sync";
+  } else if (node.nodeType === 5) {
+    classes += "passive";
   }
 
   return (

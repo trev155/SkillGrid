@@ -2,6 +2,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Spd +5",
         "displayTextFull": "Speed +5",
         "description": "",
@@ -11,6 +12,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +10",
         "displayTextFull": "HP +10",
         "description": "",
@@ -20,6 +22,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -29,6 +32,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Defense +5",
         "displayTextFull": "Defense +5",
         "description": "",
@@ -38,6 +42,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -47,6 +52,7 @@
     {
         "energy": "0",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -56,6 +62,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -65,6 +72,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -74,6 +82,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +5",
         "displayTextFull": "Sp. Def +5",
         "description": "",
@@ -83,6 +92,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Psychic +3",
         "displayTextFull": "Psychic +3",
         "description": "",
@@ -92,6 +102,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Psychic +3",
         "displayTextFull": "Psychic +3",
         "description": "",
@@ -101,6 +112,7 @@
     {
         "energy": "6",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "Psychic MGR 3",
         "displayTextFull": "Psychic: Move Gauge Refresh 3",
         "description": "Has a moderately good chance of charging the user's move gauge by one when a move is successful.",
@@ -110,6 +122,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -119,6 +132,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -128,6 +142,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +5",
         "displayTextFull": "Sp. Atk +5",
         "description": "",
@@ -137,6 +152,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "P.T. MPR 3",
         "displayTextFull": "Psychic Terrain: MP Refresh 3",
         "description": "Has a moderately good chance of restoring one MP of the move used if the move is successful.",
@@ -146,6 +162,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Psychic +3",
         "displayTextFull": "Psychic +3",
         "description": "",
@@ -155,6 +172,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "HP +20",
         "displayTextFull": "HP +20",
         "description": "",
@@ -164,6 +182,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Speed +5",
         "displayTextFull": "Speed +5",
         "description": "",
@@ -173,6 +192,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Stored Power +1",
         "displayTextFull": "Stored Power +1",
         "description": "",
@@ -182,6 +202,7 @@
     {
         "energy": "6",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "Stored Power MGR 2",
         "displayTextFull": "Stored Power: Move Gauge Refresh 2",
         "description": "Has a moderate chance of charging the user's move gauge by one when a move is successful.",
@@ -191,6 +212,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Stored Power +1",
         "displayTextFull": "Stored Power +1",
         "description": "",
@@ -200,6 +222,7 @@
     {
         "energy": "4",
         "moveLevel": "1",
+        "nodeType": "2",
         "displayTextShort": "Stored Power +1",
         "displayTextFull": "Stored Power +1",
         "description": "",
@@ -209,6 +232,7 @@
     {
         "energy": "7",
         "moveLevel": "1",
+        "nodeType": "3",
         "displayTextShort": "YSYL MPR 2",
         "displayTextFull": "You Snooze, You Lose! MP Refresh 2",
         "description": "Has a moderate chance of restoring one MP of the move used if the move is successful.",
@@ -218,6 +242,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Speed +5",
         "displayTextFull": "Speed +5",
         "description": "",
@@ -227,6 +252,7 @@
     {
         "energy": "2",
         "moveLevel": "1",
+        "nodeType": "1",
         "displayTextShort": "Defense +5",
         "displayTextFull": "Defense +5",
         "description": "",
@@ -236,6 +262,7 @@
     {
         "energy": "8",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Lucky Entry 2",
         "displayTextFull": "Lucky Entry 2",
         "description": "Sharply raises the user's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when the Pok\u00c3\u00a9mon enters a battle",
@@ -245,6 +272,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Defense +10",
         "displayTextFull": "Defense +10",
         "description": "",
@@ -254,6 +282,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "Psychic +3",
         "displayTextFull": "Psychic +3",
         "description": "",
@@ -263,6 +292,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "Psychic +3",
         "displayTextFull": "Psychic +3",
         "description": "",
@@ -272,6 +302,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Defense +10",
         "displayTextFull": "Defense +10",
         "description": "",
@@ -281,6 +312,7 @@
     {
         "energy": "8",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Precognition 2",
         "displayTextFull": "Precognition 2",
         "description": "Quickly charges the move gauge when the field is Psychic Terrain.",
@@ -290,6 +322,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Sp. Atk +10",
         "displayTextFull": "Sp. Atk +10",
         "description": "",
@@ -299,6 +332,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "HP +20",
         "displayTextFull": "HP +20",
         "description": "",
@@ -308,6 +342,7 @@
     {
         "energy": "4",
         "moveLevel": "2",
+        "nodeType": "2",
         "displayTextShort": "Stored Power +1",
         "displayTextFull": "Stored Power +1",
         "description": "",
@@ -317,6 +352,7 @@
     {
         "energy": "6",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Mutually Assured",
         "displayTextFull": "Mutually Assured",
         "description": "Whenever the user becomes poisoned, badly poisoned, paralyzed, or burned from an opponent's move, the same status condition is also applied to that opponent.",
@@ -326,6 +362,7 @@
     {
         "energy": "10",
         "moveLevel": "2",
+        "nodeType": "5",
         "displayTextShort": "Weird Recovery 1",
         "displayTextFull": "Weird Recovery 1",
         "description": "Restores the Pok\u00c3\u00a9mon's HP whenever it takes an action when the field is Psychic Terrain.",
@@ -335,6 +372,7 @@
     {
         "energy": "7",
         "moveLevel": "2",
+        "nodeType": "1",
         "displayTextShort": "Sp. Def +20",
         "displayTextFull": "Sp. Def +20",
         "description": "",
@@ -344,6 +382,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Brainteaser",
         "displayTextFull": "Brainteaser",
         "description": "The more the target's Sp. Def has been lowered, the more it powers up moves.",
@@ -353,6 +392,7 @@
     {
         "energy": "7",
         "moveLevel": "3",
+        "nodeType": "1",
         "displayTextShort": "Speed +20",
         "displayTextFull": "Speed +20",
         "description": "",
@@ -362,6 +402,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Truth-Seeking Future Sight +25",
         "description": "",
@@ -371,6 +412,7 @@
     {
         "energy": "8",
         "moveLevel": "3",
+        "nodeType": "3",
         "displayTextShort": "P.T. Pep Rally 1",
         "displayTextFull": "Psychic Terrain Pep Rally 1",
         "description": "Raises the Speed of all allied sync pairs when a move is successful.",
@@ -380,6 +422,7 @@
     {
         "energy": "10",
         "moveLevel": "3",
+        "nodeType": "3",
         "displayTextShort": "P.T. TH&H",
         "displayTextFull": "Psychic Terrain Team Hit and Heal",
         "description": "Makes all allied sync pairs gradually heal themselves when a move is successful.",
@@ -389,6 +432,7 @@
     {
         "energy": "8",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Weird Shield",
         "displayTextFull": "Weird Shield",
         "description": "Sp. Def increases 50% when the field is Psychic Terrain.",
@@ -398,6 +442,7 @@
     {
         "energy": "15",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Impervious",
         "displayTextFull": "Impervious",
         "description": "Stats cannot be lowered.",
@@ -407,6 +452,7 @@
     {
         "energy": "5",
         "moveLevel": "3",
+        "nodeType": "4",
         "displayTextShort": "Sync +25",
         "displayTextFull": "Truth-Seeking Future Sight +25",
         "description": "",
@@ -416,6 +462,7 @@
     {
         "energy": "4",
         "moveLevel": "3",
+        "nodeType": "2",
         "displayTextShort": "Stored Power +1",
         "displayTextFull": "Stored Power +1",
         "description": "",
@@ -425,6 +472,7 @@
     {
         "energy": "8",
         "moveLevel": "3",
+        "nodeType": "5",
         "displayTextShort": "Unfortuitous 3",
         "displayTextFull": "Unfortuitous 3",
         "description": "Has a moderately good chance of lowering the target's Attack, Defense, Sp. Atk, Sp. Def, Speed, Accuracy, or Evasiveness at random when an attack is successful.",
