@@ -43,7 +43,10 @@ const Node = ({node, clickFunction, hoverFunction, moveLevel}) => {
         hoverFunction(hoverData);
       }}
       q={node.positionQ} r={node.positionR} s={0}>
-      <Text>{node.displayTextShort}</Text>
+      <Text>
+        <tspan>{node.displayTextShort}</tspan>
+        <tspan className="nodeEnergy" x="0" dy="1.5em">({node.energy})</tspan>
+      </Text>
     </Hexagon>
   );
 }

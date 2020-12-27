@@ -203,6 +203,10 @@ svg g text {
   font-family: Tahoma;
 }
 
+svg g text .nodeEnergy {
+  font-size: 0.8em;
+}
+
 /* text inside hexagons, when node move level higher than selected move level */
 svg g.moveLevelGated text {
   fill-opacity: 0;
