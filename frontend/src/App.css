@@ -53,7 +53,7 @@ body {
 /* ----- Selector ----- */
 .gridSelector {
   display: block;
-  width: 200px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -65,7 +65,7 @@ body {
 /* ----- Resetter ----- */
 .resetButton {
   display: block;
-  width: 200px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -77,13 +77,61 @@ body {
 /* ----- Move Level Select ----- */
 .moveLevelSelector {
   display: block;
-  width: 200px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 
   font-size: 1.6em;
   font-family: Arial; 
+}
+
+/* ----- Save Build Button ----- */
+.saveBuildButton {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  font-size: 1.6em;
+  font-family: Arial;  
+}
+
+/* ----- Save Build Modal ----- */
+.saveBuildClose {
+  float: right;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 10%;
+}
+
+.saveBuildTitle {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: Tahoma;
+  clear: both;
+  height: 20%;
+}
+
+.saveBuildName {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 80%;
+  height: 20%;
+  font-size: 1.2em;
+}
+
+.saveBuildButtonConfirm {
+  display: block;
+  width: 60%;
+  height: 20%;
+  margin: auto;
+  margin-top: 10px;
+  background: rgba(150, 200, 130, 0.3);
 }
 
 /* ----- Node Selections ----- */

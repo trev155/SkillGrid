@@ -7,6 +7,9 @@ import Selector from './Selector';
 import Resetter from './Resetter';
 import MoveLevel from './MoveLevel';
 import SelectionPanel from './SelectionPanel';
+import SaveBuild from './SaveBuild';
+import SaveModal from './SaveModal';
+
 
 function SkillGrid() {
   const [gridData, setGridData] = useState([]);
@@ -14,6 +17,7 @@ function SkillGrid() {
   const [unitNames, setUnitNames] = useState([]);
   const [unitSelection, setUnitSelection] = useState("");
   const [moveLevel, setMoveLevel] = useState(5);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const defaultUnit = "Steelix";
 
@@ -89,6 +93,17 @@ function SkillGrid() {
     setGridData(updatedGridData);
   }
 
+  function saveBuild() {
+    const requestOptions = {
+      method: 'POST',
+      headers: {"Content-type": "application/json"},
+      body: JSON.stringify({"gridData": gridData})
+    };
+    fetch('/grid', requestOptions)
+      .then(res => res.text())
+      .then(data => console.log(data));
+  }
+
   // render variables
   const gridNodes = gridData.map(node => {
     const key = unitSelection + "-" + node.positionQ + "/" + node.positionR
@@ -110,7 +125,7 @@ function SkillGrid() {
   const gridHeight = 900;
   const viewBoxMinX = -125;
   const viewBoxMinY = -125;
-  const viewBoxWidth = 250;
+  const viewBoxWidth = 200;
   const viewBoxHeight = 250;
   const viewBox = viewBoxMinX + " " + viewBoxMinY + " " + viewBoxWidth + " " + viewBoxHeight;
 
@@ -122,6 +137,8 @@ function SkillGrid() {
         <MoveLevel moveLevel={moveLevel} selectionChangeHandler={function(level) { 
           setMoveLevel(parseInt(level));
         }}/>
+        <SaveBuild saveButtonAction={function() { setModalOpen(true)}}/>
+        <SaveModal saveBuildAction={saveBuild} closeButtonAction={function() { setModalOpen(false)}} saveModalOpened={modalOpen}/>
       </div>
 
       <div className="columnMiddle">
