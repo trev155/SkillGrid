@@ -9,6 +9,8 @@ import MoveLevel from './MoveLevel';
 import SelectionPanel from './SelectionPanel';
 import SaveBuild from './SaveBuild';
 import SaveModal from './SaveModal';
+import LoadBuilds from './LoadBuilds';
+import LoadModal from './LoadModal';
 
 
 function SkillGrid() {
@@ -17,7 +19,10 @@ function SkillGrid() {
   const [unitNames, setUnitNames] = useState([]);
   const [unitSelection, setUnitSelection] = useState("");
   const [moveLevel, setMoveLevel] = useState(5);
-  const [modalOpen, setModalOpen] = useState(false);
+  const [saveModalOpen, setSaveModalOpen] = useState(false);
+  const [saveGridname, setSaveGridName] = useState("");
+  const [loadModalOpen, setLoadModalOpen] = useState(false);
+  const [buildsList, setBuildsList] = useState([]);
 
   const defaultUnit = "Steelix";
 
@@ -28,6 +33,10 @@ function SkillGrid() {
   useEffect(() => {
     ReactTooltip.rebuild();
   });
+
+  useEffect(() => {
+    loadBuilds();
+  }, [loadModalOpen]);
 
   function loadInitialData() {
     axios.get("data/all_units.txt").then(result => {
@@ -93,15 +102,46 @@ function SkillGrid() {
     setGridData(updatedGridData);
   }
 
-  function saveBuild() {
+  function saveBuild(buildName) {
+    if (buildName.length === 0) {
+      return;
+    }
+
     const requestOptions = {
       method: 'POST',
       headers: {"Content-type": "application/json"},
-      body: JSON.stringify({"gridData": gridData})
+      body: JSON.stringify(
+        {"gridData": gridData, 
+         "unitSelection": unitSelection, 
+         "buildName": buildName,
+         "moveLevel": moveLevel
+        })
     };
     fetch('/grid', requestOptions)
-      .then(res => res.text())
-      .then(data => console.log(data));
+      .then(result => result.text())
+      .then(function(result) {
+        setSaveModalOpen(false);
+      });
+  }
+
+  function loadBuilds() {
+    if (loadModalOpen) {
+      const params = "?unit=" + unitSelection;
+      fetch('/grid/all' + params).then(result => result.json()).then(result => setBuildsList(result));
+    }
+  }
+
+  function loadBuild(buildName) {
+    if (buildName.length === 0) {
+      return;
+    }
+    const params = "?unit=" + unitSelection + "&build=" + buildName;
+    fetch('/grid' + params)
+    .then(result => result.json())
+    .then(function(result) {
+      setGridData(result);
+      setLoadModalOpen(false);
+    });
   }
 
   // render variables
@@ -137,8 +177,19 @@ function SkillGrid() {
         <MoveLevel moveLevel={moveLevel} selectionChangeHandler={function(level) { 
           setMoveLevel(parseInt(level));
         }}/>
-        <SaveBuild saveButtonAction={function() { setModalOpen(true)}}/>
-        <SaveModal saveBuildAction={saveBuild} closeButtonAction={function() { setModalOpen(false)}} saveModalOpened={modalOpen}/>
+        <SaveBuild saveButtonAction={function() { setSaveModalOpen(true)}}/>
+        <SaveModal 
+          saveBuildAction={saveBuild} 
+          closeButtonAction={function() { setSaveModalOpen(false)}} 
+          saveModalOpened={saveModalOpen}
+        />
+        <LoadBuilds buttonAction={function() { setLoadModalOpen(true)}}/>
+        <LoadModal 
+          closeButtonAction={function() { setLoadModalOpen(false)}} 
+          loadModalOpen={loadModalOpen}
+          builds={buildsList}
+          buildClickFunction={loadBuild}
+        />
       </div>
 
       <div className="columnMiddle">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
 
@@ -30,17 +30,24 @@ const customStyles = {
 };
 
 function SaveModal({saveModalOpened, saveBuildAction, closeButtonAction}) {
+  const saveBuildName = useRef();
+
+  function saveBuildHandler() {
+    if (saveBuildName != null && saveBuildName.current != null) {
+      saveBuildAction(saveBuildName.current.value);
+    }
+  }
+
   return (
     <ReactModal
     	appElement={document.getElementById("App")}
     	isOpen={saveModalOpened}
     	style={customStyles}
-    	contentLabel={"Example Modal"}
     >  
 			<button className="saveBuildClose" onClick={closeButtonAction}>X</button>
   		<h2 className="saveBuildTitle">Save Build</h2>
-	    <input className="saveBuildName" type="text" placeholder="Build Name"/>
-    	<button className="saveBuildButtonConfirm" onClick={saveBuildAction}>Save Build</button>
+	    <input ref={saveBuildName} className="saveBuildName" type="text" placeholder="Build Name"/>
+    	<button className="saveBuildButtonConfirm" onClick={saveBuildHandler}>Save Build</button>
     </ReactModal>
   );
 }

@@ -134,6 +134,57 @@ body {
   background: rgba(150, 200, 130, 0.3);
 }
 
+/* ----- Load Builds Button ----- */
+.loadBuildsButton {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+
+  font-size: 1.6em;
+  font-family: Arial;  
+}
+
+/* ----- Load Builds Modal ----- */
+.loadBuildClose {
+  float: right;
+  background-color: rgba(0, 0, 0, 0);
+  width: 10%;
+  height: 5%;
+}
+
+.loadBuildTitle {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: Tahoma;
+  clear: both;
+  height: 20%;
+}
+
+.loadBuildsList {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.loadBuildsList li {
+  border: 1px solid black;
+  margin-bottom: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  width: 100%;
+
+  font-size: 1.2em;
+  font-family: Tahoma;
+  text-align: center;
+}
+
+.loadBuildsList li:hover {
+  background: rgba(10, 200, 130, 0.5);
+}
+
 /* ----- Node Selections ----- */
 .energy {
   width: 90%;
