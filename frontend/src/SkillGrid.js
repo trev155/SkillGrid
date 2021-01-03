@@ -166,24 +166,26 @@ function SkillGrid() {
   return (
     <div className="skillGrid noselect">
       <div className="columnLeft">
-        <Selector selection={unitSelection} selectionChangeHandler={switchUnit} options={options}/>
-        <Resetter clickFunction={clearSelectedNodes}/>
-        <MoveLevel moveLevel={moveLevel} selectionChangeHandler={function(level) { 
-          setMoveLevel(parseInt(level));
-        }}/>
-        <SaveBuild saveButtonAction={function() { setSaveModalOpen(true)}}/>
-        <SaveModal 
-          saveBuildAction={saveBuild} 
-          closeButtonAction={function() { setSaveModalOpen(false)}} 
-          saveModalOpened={saveModalOpen}
-        />
-        <LoadBuilds buttonAction={function() { setLoadModalOpen(true)}}/>
-        <LoadModal 
-          closeButtonAction={function() { setLoadModalOpen(false)}} 
-          loadModalOpen={loadModalOpen}
-          builds={buildsList}
-          buildClickFunction={loadBuild}
-        />
+        <div className="menuBar">
+          <Selector selection={unitSelection} selectionChangeHandler={switchUnit} options={options}/>
+          <Resetter clickFunction={clearSelectedNodes}/>
+          <MoveLevel moveLevel={moveLevel} selectionChangeHandler={function(level) { 
+            setMoveLevel(parseInt(level));
+          }}/>
+          <SaveBuild saveButtonAction={function() { setSaveModalOpen(true)}}/>
+          <SaveModal 
+            saveBuildAction={saveBuild} 
+            closeButtonAction={function() { setSaveModalOpen(false)}} 
+            saveModalOpened={saveModalOpen}
+          />
+          <LoadBuilds buttonAction={function() { setLoadModalOpen(true)}}/>
+          <LoadModal 
+            closeButtonAction={function() { setLoadModalOpen(false)}} 
+            loadModalOpen={loadModalOpen}
+            builds={buildsList}
+            buildClickFunction={loadBuild}
+          />
+        </div>
       </div>
 
       <div className="columnMiddle">

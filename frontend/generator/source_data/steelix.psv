@@ -43,7 +43,7 @@ energy|moveLevel|nodeType|displayTextShort|displayTextFull|description|positionQ
 8|3|3|Clang! BB 1|Clang! Beserk Bunch 1|Raises the Attack of all allied sync pairs when a move is successful.|1|-5
 10|3|5|Soothing Sand 1|Soothing Sand 1|Restores the Pokémon's HP whenever it takes an action during a sandstorm.|2|-6
 10|3|5|Recuperation 2|Recuperation 2|Restores the user's HP after using a sync move.|-3|5
-10|3|5|Impatient 1|Impatient 1|Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attck move.|-1|4
+10|3|5|Impatient 1|Impatient 1|Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attack move.|-1|4
 5|3|4|Sync +25|Steel-Clad Iron Tail: Power +25||0|3
 10|3|3|Gyro Ball SS9|Gyro Ball Surging Sand 9|Powers up moves in a sandstorm.|1|4
 8|3|5|Rejuvenate 6|Rejuvenate 6|Charges the user's move gauge by six after using a sync move.|2|4

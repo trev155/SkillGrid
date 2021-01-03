@@ -1,11 +1,30 @@
-body {
-	background-color: rgba(0, 0, 30, 0.5);
+html {
+  --appBackground: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  --selectionPanelBackground: linear-gradient(rgba(235, 220, 250, 0.8), rgba(235, 220, 250, 0.8));
+  --modalBackground: linear-gradient(rgba(235, 220, 250, 0.7), rgba(235, 220, 250, 0.7));
+  --buttonBackground: linear-gradient(rgba(235, 220, 250, 0.8), rgba(235, 220, 250, 0.8));
+  --buttonBackgroundHover: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+
+  --statNode: rgb(30, 20, 255);
+  --moveNode: rgb(55, 138, 3);
+  --moveEffectNode: rgb(150, 4, 4);
+  --syncNode: rgb(2, 108, 233);
+  --passiveNode: rgb(210, 155, 0);
+
+  --hexOutline: rgb(30, 201, 102);
+  --hexText: rgb(15, 255, 222);
 }
 
 /* ----- Layout ----- */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
 .skillGrid {
-	background-color: rgba(11, 22, 12, 0.5);
-  height: 900px;
+	margin: 0;
+  height: 1000px;
+  background: var(--appBackground);
 }
 
 .noselect {
@@ -21,31 +40,27 @@ body {
 
 .columnLeft {
   float: left; 
-  width: 20%;
+  width: 22%;
   height: 100%;
-  background-color: rgba(20, 20, 20, 0.5);
   overflow: auto;
 }
 
 .columnMiddle {
   display: inline-block; 
-  width: 60%;
+  width: 55%;
   height: 100%;
-  background-color: rgba(90, 140, 120, 0.5);
 }
 
 .columnRight {
   float: right;
-  width: 20%;
-  height: 100%;
-  background-color: rgba(90, 150, 200, 0.6);
+  width: 22%;
+  height: 100%; 
   overflow: auto;
 }
 
 /* ----- React Tooltip ----- */
 .hoverData {
   font-size: 1.3em;
-  font-family: Arial;
 }
 
 .hoverData ul {
@@ -54,79 +69,58 @@ body {
   padding: 0;
 }
 
-/* ----- Selector ----- */
-.gridSelector {
+/* ----- Menu Button ----- */
+.menuBar button, select {
   display: block;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-
   font-size: 1.6em;
-  font-family: Arial;
+  background: var(--buttonBackground);
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-/* ----- Resetter ----- */
-.resetButton {
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-
-  font-size: 1.6em;
-  font-family: Arial; 
-}
-
-/* ----- Move Level Select ----- */
-.moveLevelSelector {
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-
-  font-size: 1.6em;
-  font-family: Arial; 
-}
-
-/* ----- Save Build Button ----- */
-.saveBuildButton {
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-
-  font-size: 1.6em;
-  font-family: Arial;  
+.menuBar button:hover, select:hover {
+  background: var(--buttonBackgroundHover);
 }
 
 /* ----- Save Build Modal ----- */
+.saveModal {
+  background: var(--modalBackground);
+  height: 100%;
+}
+
 .saveBuildClose {
   float: right;
-  background-color: rgba(0, 0, 0, 0);
   width: 10%;
   height: 10%;
+  background: var(--buttonBackground);
+  border-radius: 10px;
+}
+
+.saveBuildClose:hover {
+  background: var(--buttonBackgroundHover);
 }
 
 .saveBuildTitle {
+  clear: both;
   margin: 0;
+  height: 20%;
   font-size: 1.5em;
   text-align: center;
   font-family: Tahoma;
-  clear: both;
-  height: 20%;
 }
 
 .saveBuildName {
   display: block;
-  text-align: center;
   margin: auto;
   margin-top: 10px;
   width: 80%;
   height: 20%;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .saveBuildButtonConfirm {
@@ -135,36 +129,41 @@ body {
   height: 20%;
   margin: auto;
   margin-top: 10px;
-  background: rgba(150, 200, 130, 0.3);
+  font-size: 1.2em;
+  background: var(--buttonBackground);
+  border-radius: 10px;
 }
 
-/* ----- Load Builds Button ----- */
-.loadBuildsButton {
-  display: block;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-
-  font-size: 1.6em;
-  font-family: Arial;  
+.saveBuildButtonConfirm:hover {
+  background: var(--buttonBackgroundHover);
 }
 
 /* ----- Load Builds Modal ----- */
-.loadBuildClose {
-  float: right;
-  background-color: rgba(0, 0, 0, 0);
-  width: 10%;
-  height: 5%;
+.loadBuildsModal {
+  background: var(--modalBackground);
+  height: 100%;
+  overflow: auto;
 }
 
-.loadBuildTitle {
+.loadBuildsClose {
+  float: right;
+  width: 10%;
+  height: 5%;
+  background: var(--buttonBackground);
+  border-radius: 10px;
+}
+
+.loadBuildsClose:hover {
+  background: var(--buttonBackgroundHover);
+}
+
+.loadBuildsTitle {
+  clear: both;
   margin: 0;
+  height: 15%;
   font-size: 1.5em;
   text-align: center;
   font-family: Tahoma;
-  clear: both;
-  height: 20%;
 }
 
 .loadBuildsList {
@@ -175,29 +174,44 @@ body {
 
 .loadBuildsList li {
   border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1em;
   padding-top: 0.4em;
   padding-bottom: 0.4em;
-  width: 100%;
-
+  width: 70%;
   font-size: 1.2em;
   font-family: Tahoma;
   text-align: center;
+  background: var(--buttonBackground);
+  border-radius: 10px;
 }
 
 .loadBuildsList li:hover {
-  background: rgba(10, 200, 130, 0.5);
+  background: var(--buttonBackgroundHover);
+}
+
+.loadBuildsNone {
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /* ----- Node Selections ----- */
+.selectionsPanel {
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
+  border: 1px solid white;
+  background: var(--selectionPanelBackground);
+}
+
 .energy {
   width: 90%;
   margin: auto;
   margin-top: 30px;
   text-align: center;
-
-  font-size: 1.6em;
-  font-family: Arial;
+  font-size: 1.6em;  
 }
 
 .selectionsList {
@@ -207,20 +221,19 @@ body {
 
 .selectionsList p {
   font-size: 1.2em;
-  font-family: Arial;
-  margin-bottom: 0;
+  margin-bottom: 5px;
   margin-top: 5px;
   margin-left: 5px;
 }
 
 .selectionsList div.levelOneSelections {
-  background-color: rgba(233, 130, 90, 0.5);
+  /* background-color: rgba(233, 130, 90, 0.5); */
 }
 .selectionsList div.levelTwoSelections {
-  background-color: rgba(200, 40, 220, 0.5);
+  /* background-color: rgba(200, 40, 220, 0.5); */
 }
 .selectionsList div.levelThreeSelections {
-  background-color: rgba(11, 130, 100, 0.5);
+  /* background-color: rgba(11, 130, 100, 0.5); */
 }
 
 .selectionsList ul {
@@ -231,16 +244,13 @@ body {
 
 .selectionsList li {
   font-size: 1.0em;
-  font-family: Verdana;
-  color: rgb(40, 10, 40);
   padding-top: 3px;
 }
 
 /* ----- react-hexgrid ----- */
 /* background color of hexagons */
 svg g {
-  fill-opacity: 0.3;
-  
+  fill-opacity: 0.3; 
 }
 svg g:hover { 
   fill-opacity: 1;
@@ -250,21 +260,20 @@ svg g.activated {
 }
 
 svg g.stat{
-  fill: rgb(30, 20, 255);
+  fill: var(--statNode);
 }
 svg g.move {
-  fill: rgb(55, 138, 3);
+  fill: var(--moveNode);
 }
 svg g.moveEffect {
-  fill: rgb(150, 4, 4);
+  fill: var(--moveEffectNode);
 }
 svg g.sync {
-  fill: rgb(2, 108, 233);
+  fill: var(--syncNode);
 }
 svg g.passive {
-  fill: rgb(210, 155, 0);
+  fill: var(--passiveNode);
 }
-
 svg g.stat.activated{
   
 }
@@ -288,22 +297,20 @@ svg g.activated .hexagon {
 
 /* outline of hexagons */
 svg g polygon {
-	stroke: rgb(30, 201, 102);
+	stroke: var(--hexOutline);
 	stroke-width: 0.1;
 	transition: fill-opacity .5s;
 }
 svg g.activated polygon {
-  stroke-width: 0.8;
+  stroke-width: 0.6;
 }
 
 /* text inside hexagons */
 svg g text {
-	fill: rgb(15, 255, 222);
+	fill: var(--hexText);
 	fill-opacity: 0.9;
 	transition: fill-opacity .5s;
-
   font-size: 0.19em;
-  font-family: Tahoma;
 }
 
 svg g text .nodeEnergy {

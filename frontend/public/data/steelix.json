@@ -445,7 +445,7 @@
         "nodeType": "5",
         "displayTextShort": "Impatient 1",
         "displayTextFull": "Impatient 1",
-        "description": "Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attck move.",
+        "description": "Has a small chance of reducing the user's sync move countdown by one when the user is hit by an attack move.",
         "positionQ": "-1",
         "positionR": "4"
     },

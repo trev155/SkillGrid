@@ -13,7 +13,7 @@ const customStyles = {
   },
   content: {
     position: 'fixed',
-   	width: '30%',
+   	width: '35%',
    	height: '25%',
    	top: '30%',
    	left: '30%',
@@ -25,7 +25,7 @@ const customStyles = {
     WebkitOverflowScrolling: 'touch',
     borderRadius: '4px',
     outline: 'none',
-    padding: '20px'
+    padding: '0px'
   }
 };
 
@@ -44,10 +44,12 @@ function SaveModal({saveModalOpened, saveBuildAction, closeButtonAction}) {
     	isOpen={saveModalOpened}
     	style={customStyles}
     >
-			<button className="saveBuildClose" onClick={closeButtonAction}>X</button>
-  		<h2 className="saveBuildTitle noselect">Save Build</h2>
-	    <input ref={saveBuildName} className="saveBuildName" type="text" placeholder="Build Name"/>
-    	<button className="saveBuildButtonConfirm" onClick={saveBuildHandler}>Save Build</button>
+      <div className="saveModal">
+  			<button className="saveBuildClose" onClick={closeButtonAction}>X</button>
+    		<h2 className="saveBuildTitle noselect">Save Build</h2>
+  	    <input ref={saveBuildName} className="saveBuildName" type="text" placeholder="Build Name"/>
+      	<button className="saveBuildButtonConfirm" onClick={saveBuildHandler}>Save Build</button>
+      </div>
     </ReactModal>
   );
 }

@@ -13,7 +13,7 @@ const customStyles = {
   },
   content: {
     position: 'fixed',
-   	width: '30%',
+   	width: '35%',
    	height: '50%',
    	top: '20%',
    	left: '30%',
@@ -25,12 +25,12 @@ const customStyles = {
     WebkitOverflowScrolling: 'touch',
     borderRadius: '4px',
     outline: 'none',
-    padding: '20px'
+    padding: '0px'
   }
 };
 
 function LoadModal({closeButtonAction, loadModalOpen, builds, buildClickFunction}) {
-  const buildsList = builds.map(function(build) {
+  const buildsList = builds.length === 0 ? <div className='loadBuildsNone'>No Builds Found</div> : builds.map(function(build) {
     return <li key={build} onClick={function() { buildClickFunction(build) }}>{build}</li>
   });
 
@@ -39,10 +39,12 @@ function LoadModal({closeButtonAction, loadModalOpen, builds, buildClickFunction
     	appElement={document.getElementById("App")}
     	isOpen={loadModalOpen}
     	style={customStyles}
-    >  
-      <button className="loadBuildClose" onClick={closeButtonAction}>X</button>
-      <h2 className="loadBuildTitle noselect">Load Build</h2>
-      <ul className="loadBuildsList">{buildsList}</ul>
+    >
+      <div className="loadBuildsModal noselect">
+        <button className="loadBuildsClose" onClick={closeButtonAction}>X</button>
+        <h2 className="loadBuildsTitle">Load Build</h2>
+        <ul className="loadBuildsList">{buildsList}</ul>
+      </div>
     </ReactModal>
   );
 }
