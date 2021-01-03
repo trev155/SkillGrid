@@ -20,7 +20,6 @@ function SkillGrid() {
   const [unitSelection, setUnitSelection] = useState("");
   const [moveLevel, setMoveLevel] = useState(5);
   const [saveModalOpen, setSaveModalOpen] = useState(false);
-  const [saveGridname, setSaveGridName] = useState("");
   const [loadModalOpen, setLoadModalOpen] = useState(false);
   const [buildsList, setBuildsList] = useState([]);
 
@@ -160,15 +159,10 @@ function SkillGrid() {
     return <option key={name} value={name}>{name}</option>;
   });
 
-  // these should be determined by media queries
-  const gridWidth = 900;
-  const gridHeight = 900;
-  const viewBoxMinX = -125;
-  const viewBoxMinY = -125;
-  const viewBoxWidth = 200;
-  const viewBoxHeight = 250;
-  const viewBox = viewBoxMinX + " " + viewBoxMinY + " " + viewBoxWidth + " " + viewBoxHeight;
-
+  const gridWidth = "100%";
+  const gridHeight = "100%";
+  const viewBox = "-110 -110 220 220";
+  
   return (
     <div className="skillGrid">
       <div className="columnLeft">
@@ -197,7 +191,7 @@ function SkillGrid() {
           <Layout size={{ x: 10, y: 10 }} flat={true} spacing={1.1} origin={{ x: 0, y: 0 }}>
             {gridNodes}
           </Layout>
-        </HexGrid>  
+        </HexGrid>
       </div>
 
       <div className="columnRight">

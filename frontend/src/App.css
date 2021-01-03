@@ -22,6 +22,7 @@ body {
   width: 20%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.5);
+  overflow: auto;
 }
 
 .columnMiddle {
@@ -36,6 +37,7 @@ body {
   width: 20%;
   height: 100%;
   background-color: rgba(90, 150, 200, 0.6);
+  overflow: auto;
 }
 
 /* ----- React Tooltip ----- */
