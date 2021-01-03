@@ -24,7 +24,7 @@ class HexGrid extends Component {
   render() {
     const { width, height, viewBox } = this.props
     return (
-      <svg className="grid" preserveAspectRatio={"xMinYMin meet"} width={width} height={height} viewBox={viewBox} version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <svg className="grid" width={width} height={height} viewBox={viewBox} version="1.1" xmlns="http://www.w3.org/2000/svg">
         {this.props.children}
       </svg>
     );
