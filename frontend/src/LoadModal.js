@@ -29,9 +29,14 @@ const customStyles = {
   }
 };
 
-function LoadModal({closeButtonAction, loadModalOpen, builds, buildClickFunction}) {
+function LoadModal({closeButtonAction, loadModalOpen, builds, buildClickFunction, deleteBuildAction}) {
   const buildsList = builds.length === 0 ? <div className='loadBuildsNone'>No Builds Found</div> : builds.map(function(build) {
-    return <li key={build} onClick={function() { buildClickFunction(build) }}>{build}</li>
+    return (
+      <li key={build}>
+        <div className='buildName' onClick={function() { buildClickFunction(build) }}>{build}</div>
+        <div className='deleteBuild' onClick={function() { deleteBuildAction(build) }}>X</div>
+      </li>
+    );
   });
 
   return (
@@ -53,7 +58,8 @@ LoadModal.propTypes = {
   closeButtonAction: PropTypes.func.isRequired,
   loadModalOpen: PropTypes.bool.isRequired,
   builds: PropTypes.array.isRequired,
-  buildClickFunction: PropTypes.func.isRequired
+  buildClickFunction: PropTypes.func.isRequired,
+  deleteBuildAction: PropTypes.func.isRequired
 };
 
 export default LoadModal;

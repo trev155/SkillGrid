@@ -55,9 +55,27 @@ app.get("/grid", function(req, res) {
 			if (filename.startsWith(unit) && filename.endsWith(buildName)) {
 				fs.readFile(__dirname + "/userdata/" + filename, "utf8", (err, data) => {
 					if (err) {
-						console.log(err);
+						throw err;
 					}
 					res.send(data);
+				});
+			}
+		});
+	});
+});
+
+app.delete("/grid", function(req, res) {
+	const unit = req.query.unit;
+	const buildName = req.query.build;
+
+	fs.readdir(__dirname + "/userdata", function(err, files) {
+		files.forEach(filename => {
+			if (filename.startsWith(unit) && filename.endsWith(buildName)) {
+				fs.unlink(__dirname + "/userdata/" + filename, (err) => {
+					if (err) {
+						throw err;
+					}
+					res.send("Successful delete: " + filename);
 				});
 			}
 		});

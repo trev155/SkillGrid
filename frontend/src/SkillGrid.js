@@ -143,6 +143,19 @@ function SkillGrid() {
     });
   }
 
+  function deleteBuild(buildName) {
+    if (buildName.length === 0) {
+      return;
+    }
+    const params = "?unit=" + unitSelection + "&build=" + buildName;
+    fetch('/grid' + params, {"method": "DELETE"})
+      .then(result => result.text())
+      .then(function(result) {
+        console.log(result);
+        setLoadModalOpen(false);
+      });
+  }
+
   // render variables
   const gridNodes = gridData.map(node => {
     const key = unitSelection + "-" + node.positionQ + "/" + node.positionR
@@ -184,6 +197,7 @@ function SkillGrid() {
             loadModalOpen={loadModalOpen}
             builds={buildsList}
             buildClickFunction={loadBuild}
+            deleteBuildAction={deleteBuild}
           />
         </div>
       </div>
