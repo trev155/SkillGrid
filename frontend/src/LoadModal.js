@@ -41,7 +41,7 @@ function LoadModal({closeButtonAction, loadModalOpen, builds, buildClickFunction
     	style={customStyles}
     >  
       <button className="loadBuildClose" onClick={closeButtonAction}>X</button>
-      <h2 className="loadBuildTitle">Load Build</h2>
+      <h2 className="loadBuildTitle noselect">Load Build</h2>
       <ul className="loadBuildsList">{buildsList}</ul>
     </ReactModal>
   );

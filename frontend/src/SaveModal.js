@@ -43,9 +43,9 @@ function SaveModal({saveModalOpened, saveBuildAction, closeButtonAction}) {
     	appElement={document.getElementById("App")}
     	isOpen={saveModalOpened}
     	style={customStyles}
-    >  
+    >
 			<button className="saveBuildClose" onClick={closeButtonAction}>X</button>
-  		<h2 className="saveBuildTitle">Save Build</h2>
+  		<h2 className="saveBuildTitle noselect">Save Build</h2>
 	    <input ref={saveBuildName} className="saveBuildName" type="text" placeholder="Build Name"/>
     	<button className="saveBuildButtonConfirm" onClick={saveBuildHandler}>Save Build</button>
     </ReactModal>

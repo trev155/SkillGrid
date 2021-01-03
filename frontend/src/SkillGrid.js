@@ -164,7 +164,7 @@ function SkillGrid() {
   const viewBox = "-110 -110 220 220";
   
   return (
-    <div className="skillGrid">
+    <div className="skillGrid noselect">
       <div className="columnLeft">
         <Selector selection={unitSelection} selectionChangeHandler={switchUnit} options={options}/>
         <Resetter clickFunction={clearSelectedNodes}/>
