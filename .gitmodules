@@ -1,0 +1,3 @@
+[submodule "frontend/react-hexgrid"]
+	path = frontend/react-hexgrid
+	url = https://github.com/trev155/react-hexgrid.git
