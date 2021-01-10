@@ -2,8 +2,12 @@
   "name": "test",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "12.13.0"
+  },
   "scripts": {
-    "start": "set PORT=3001 && node ./bin/www"
+    "start": "set PORT=3001 && node ./bin/www",
+    "heroku-postbuild": "cd frontend && npm install && cd react-hexgrid && npm link && cd .. && npm link react-hexgrid && npm install react-hexgrid && npm run build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
